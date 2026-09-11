@@ -21,6 +21,11 @@ The snapback of a hook is a natural first big question for the loop. Use
 make, for whom, or why past videos did not get views; it fixes the avatar,
 topic band, and stance that the hook then has to serve.
 
+`brand-idea-miner` decides the idea itself (topic, angle, visual format,
+proof plan) before any hook is written; when the user has no idea yet, start
+there. Its collision (the outside-niche frame that makes the angle
+non-obvious) is usually the strongest lever for the lean.
+
 ## Prerequisites
 
 - A topic, the target viewer, and the format (short-form vertical, YouTube long-form, or written) from the user. Ask for the target viewer if it is missing; the lean-in lever depends on it.

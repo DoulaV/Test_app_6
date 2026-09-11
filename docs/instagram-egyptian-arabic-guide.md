@@ -1,15 +1,16 @@
 # Producing Instagram Reels in Egyptian Arabic with the three Kallaway skills
 
-This is the working guide for going from "I have an idea" to a finished
-Egyptian Arabic Reel script using the three skills in this repo. They were
-built by `youtube-to-agent` from three Kallaway videos and they run in a
+This is the working guide for going from "I need ideas" to a finished
+Egyptian Arabic Reel script using the four skills in this repo. They were
+built by `youtube-to-agent` from five Kallaway videos and they run in a
 fixed order:
 
 | Order | Skill | Decides | Source video |
 |---|---|---|---|
 | 1 | `algorithm-strategist` | What to make, for whom, with what stance | How Social Media Algorithms Actually Work |
-| 2 | `hook-writer` | The first three lines and the on-screen text | How to Create Irresistible Hooks |
-| 3 | `story-loop-writer` | The body: stakes, big question, head fake, re-hook | The Neuroscience of Addictive Storytelling |
+| 2 | `brand-idea-miner` | Which validated idea, remixed how, with what proof | The Power of Suggestion + Idea Mining (two videos) |
+| 3 | `hook-writer` | The first three lines and the on-screen text | How to Create Irresistible Hooks |
+| 4 | `story-loop-writer` | The body: stakes, big question, head fake, re-hook | The Neuroscience of Addictive Storytelling |
 
 You do not need to name the skills. Claude Code triggers them from the
 request. Naming them is fine when you want to force the order.
@@ -68,6 +69,22 @@ actually hold; it will not invent outrage, and you should not ask it to.
 Cult-hopping anchors work well in Egypt: a famous brand, a well-known TV
 host, a football club, a proverb everyone knows. Pick ones your avatar has
 opinions about.
+
+### Step 1b: Mine and shape the ideas (brand-idea-miner)
+
+When you are out of ideas, or want to beat a reference reel rather than guess:
+
+> Using brand-idea-miner. Avatar and band: [paste]. Voice: [paste]. Here are
+> 10 to 20 accounts my viewer already watches: [...]. Set up my research,
+> log the outliers you can see from what I paste, and give me a ranked
+> shortlist with hold/remix, the collision, the five-element check, and the
+> proof plan for each.
+
+Egyptian-specific notes: collision sources that land with Egyptian viewers
+include proverbs (أمثال), football, Ramadan routines, family dynamics, and
+public figures your avatar already has opinions about. Proof stays honest:
+Egyptian audiences punish inflated numbers in the comments, so borrowed proof
+is cited and own results are exact.
 
 ### Step 2: Write the hook (hook-writer)
 

@@ -21,6 +21,11 @@ two. When they ask why a specific video underperformed, this skill diagnoses
 fit versus engagement, and the other two fix the script if engagement was
 the problem.
 
+When the user needs actual video ideas rather than a verdict on which of
+their own ideas to make, hand the avatar and band to `brand-idea-miner`,
+which mines outliers in the niche and shapes them into ideas that pass the
+five obsession elements.
+
 ## Prerequisites
 
 - Who the creator wants to reach (or enough about their business to infer it), the platform, and a list of recent or planned video topics with rough performance if available. Ask for the audience if missing; every recommendation hangs on the avatar.

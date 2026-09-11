@@ -1,0 +1,50 @@
+{
+  "skill_name": "brand-idea-miner",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm a physiotherapist in Alexandria posting reels in Egyptian Arabic about desk workers' back pain. I'm out of ideas and everything I make looks like everyone else's stretching videos. Here are 6 accounts I like: [placeholders]. Set up my research and give me my first shortlist.",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": [],
+      "assertions": [
+        "Breaks ideas or references into the seven legos (topic, angle, hook, story structure, visual format, key visuals, audio)",
+        "States hold and remix decisions explicitly, with structure held and the angle changed",
+        "Names an outside-niche collision that makes the angle non-obvious",
+        "Checks each idea against the five elements (relevant and relatable, small effort big reward, non-obvious, proof, actionable)",
+        "Gives a proof plan per idea, marking borrowed proof as borrowed",
+        "Never lets the creator claim superiority or command the viewer; authority is shown through results and method",
+        "Provides the research setup: watchlist building, the 5x outlier and 0.5% engagement thresholds, a date window, and a manual path since no tool is mentioned"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "here's a reel that did 2.3M views on an account that usually gets 40k: a guy shows his fridge 'before' and 'after' a meal prep system, text hook says 'I stopped ordering delivery for 30 days', talking head over b-roll, trending audio. I do budgeting content for young couples in Cairo. how do I remix this without copying it, and will it build my brand or just get views?",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": [],
+      "assertions": [
+        "Breaks ideas or references into the seven legos (topic, angle, hook, story structure, visual format, key visuals, audio)",
+        "States hold and remix decisions explicitly, with structure held and the angle changed",
+        "Names an outside-niche collision that makes the angle non-obvious",
+        "Checks each idea against the five elements (relevant and relatable, small effort big reward, non-obvious, proof, actionable)",
+        "Gives a proof plan per idea, marking borrowed proof as borrowed",
+        "Never lets the creator claim superiority or command the viewer; authority is shown through results and method",
+        "Computes or states the outlier score (about 57x) and identifies the reference's weak point to beat"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "audit this idea before I shoot it: 'Why I'm the best English tutor in Egypt: 5 methods'. audience is parents of high school students. be honest.",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": [],
+      "assertions": [
+        "Breaks ideas or references into the seven legos (topic, angle, hook, story structure, visual format, key visuals, audio)",
+        "States hold and remix decisions explicitly, with structure held and the angle changed",
+        "Names an outside-niche collision that makes the angle non-obvious",
+        "Checks each idea against the five elements (relevant and relatable, small effort big reward, non-obvious, proof, actionable)",
+        "Gives a proof plan per idea, marking borrowed proof as borrowed",
+        "Never lets the creator claim superiority or command the viewer; authority is shown through results and method",
+        "Flags the title as a direct authority claim that fails the bank-shot check and rewrites it as a result plus method"
+      ]
+    }
+  ]
+}

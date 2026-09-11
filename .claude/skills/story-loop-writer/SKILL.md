@@ -21,6 +21,11 @@ When they have not yet chosen the topic, audience, or stance, or ask why
 videos are not getting views, start with `algorithm-strategist`; the stakes
 in this skill should be the pain that skill identified for the avatar.
 
+`brand-idea-miner` supplies the proof plan and the level the idea aims at
+(signal, belief, action). Use the proof as the head fake's payload and the
+level to pick the structure: breakdown, before-and-after transformation, or
+step-by-step with results.
+
 ## Prerequisites
 
 - The raw material of the story (what actually happened, or the facts to convey), the target audience, and the medium and length (short video, YouTube script, email, post, talk). Ask for the audience if missing; stakes only work when they are personally relevant to that reader.

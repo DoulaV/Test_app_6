@@ -84,8 +84,17 @@ For an audit, open with this table before any rewrite:
 
 Problems come from a fixed list: no stakes, vague teaser, reveal without a
 prediction, cheap surprise (no clue), dead air after a resolution, loop
-never reopened. Rank them worst first, then rewrite only the weak sections
-and label the moves as above.
+never reopened. A line can carry more than one; name the primary problem in
+the table and mention the rest in the row. Rank worst first by contribution
+to the drop-off the user described (or, absent that, by how early in the
+piece the loop breaks). Rewrite only the weak sections, or the whole piece
+when every line is weak and say so. A rewrite that contains a head fake
+carries the head-fake check table just like a fresh draft.
+
+When the user shares only the opening of a longer piece, treat the fragment
+as the master loop: run the short-piece pacing on it and make its re-hook
+hand the master question to the body. State the pacing you assumed for the
+body.
 
 ## Pacing by length (not shown in the video)
 

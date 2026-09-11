@@ -13,10 +13,12 @@ Key lookup order: GEMINI_API_KEY, GOOGLE_API_KEY, then the same names in
 Free tier limit (per Google docs): 8 hours of YouTube video per day.
 """
 import argparse
+import http.client
 import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -142,18 +144,27 @@ def main():
     text, raw, errors = "", None, []
     for api in order:
         fn = call_interactions if api == "interactions" else call_generate
-        try:
-            text, raw = fn(key, args.model, args.url, prompt)
-            if text:
-                break
-            errors.append(f"{api}: empty response")
-        except urllib.error.HTTPError as e:
-            detail = e.read().decode(errors="replace")[:500]
-            errors.append(f"{api}: HTTP {e.code} {detail}")
-            if e.code in (401, 403):
-                break  # a bad key will not get better on the fallback endpoint
-        except (urllib.error.URLError, TimeoutError) as e:
-            errors.append(f"{api}: {e}")
+        stop = False
+        for attempt in range(3):  # long videos can drop the connection; retry with backoff
+            try:
+                text, raw = fn(key, args.model, args.url, prompt)
+                if text:
+                    break
+                errors.append(f"{api}: empty response")
+            except urllib.error.HTTPError as e:
+                detail = e.read().decode(errors="replace")[:500]
+                errors.append(f"{api}: HTTP {e.code} {detail}")
+                if e.code in (401, 403):
+                    stop = True  # a bad key will not get better on the fallback endpoint
+                if e.code not in (429, 500, 502, 503, 504):
+                    break
+            except (urllib.error.URLError, TimeoutError, http.client.HTTPException, ConnectionError, OSError) as e:
+                errors.append(f"{api}: attempt {attempt + 1}: {type(e).__name__}: {e}")
+            if attempt < 2:
+                print(f"{api}: retrying in {5 * (attempt + 1)}s ...", file=sys.stderr)
+                time.sleep(5 * (attempt + 1))
+        if text or stop:
+            break
 
     if not text:
         sys.exit("Gemini returned nothing usable.\n" + "\n".join(errors))

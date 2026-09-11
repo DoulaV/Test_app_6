@@ -17,6 +17,9 @@ The loop governs the body. For the first three lines of a video or post, use
 `hook-writer` (context lean, scroll stop, contrarian snapback); its snapback
 usually doubles as the loop's first big question. When the user asks for a
 whole script, run hook-writer for the opening and this skill for the rest.
+When they have not yet chosen the topic, audience, or stance, or ask why
+videos are not getting views, start with `algorithm-strategist`; the stakes
+in this skill should be the pain that skill identified for the avatar.
 
 ## Prerequisites
 

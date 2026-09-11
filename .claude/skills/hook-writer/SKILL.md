@@ -16,7 +16,10 @@ in `references/source-notes.md`; anything copied from the screen is in
 The hook covers only the opening lines. When the user also needs the body of
 the piece to hold attention, or shares a full script, use `story-loop-writer`
 (stakes, big question, head fake, re-hook) for everything after the hook.
-The snapback of a hook is a natural first big question for the loop.
+The snapback of a hook is a natural first big question for the loop. Use
+`algorithm-strategist` before either when the user is still deciding what to
+make, for whom, or why past videos did not get views; it fixes the avatar,
+topic band, and stance that the hook then has to serve.
 
 ## Prerequisites
 

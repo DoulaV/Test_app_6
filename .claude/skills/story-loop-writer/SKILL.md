@@ -60,9 +60,17 @@ square brackets inline, then a short table:
 |---|---|---|---|
 ```
 
-For a script the user will read aloud, add a clean copy below the labelled
-one with the labels stripped, since inline labels get in the way of
-recording.
+Always add a clean copy below the labelled one with the labels stripped; a
+labelled draft is not postable or recordable. Lay the labels out however the
+medium reads best (one line for a short script, a label above each block for
+a line-broken post), and add descriptive sub-labels when they help, for
+example "CONTEXT BEFORE THE REVEAL" or "clue planted", since the four core
+moves have no name for the back-up step or the clue plant.
+
+Platform mechanics matter for where the stakes and big question must land:
+on LinkedIn only the first two short lines show before "see more"; on
+YouTube the first 20 to 30 seconds; in email the subject and preview line.
+Put stakes and the big question inside that window.
 
 Follow with two or three sentences on what you changed and why, and one
 line stating the assumed audience and what they have at risk. When the user
@@ -104,6 +112,7 @@ say so:
 | Length | Loops | Where |
 |---|---|---|
 | Under 60 seconds or under 200 words | one master loop | stakes and big question in the first two lines, one head fake, one re-hook into the close |
+| 200 to 400 words (a LinkedIn or blog-length post) | one master loop plus one local loop | the local loop is usually the middle section (a timeline, the failed attempts); re-hook out of it into the reveal |
 
 Spoken pace for timed scripts is about 2.5 to 3 words per second, so a 30
 second reel holds 75 to 90 words and a 45 second one 110 to 135.

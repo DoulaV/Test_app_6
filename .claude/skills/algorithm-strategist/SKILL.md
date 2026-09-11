@@ -88,8 +88,17 @@ that as roughly the next five to ten posts, not a permanent mark.
 solves, the non-obvious point, the small action and its result, and a
 stance line (see comment tactics). Say which to post first and why.
 
-**Stop doing.** One short list, if the user mentioned any of posting time,
-hashtags, caption tricks, or settings.
+**Stop doing.** One short list. Always include it when the user mentioned
+posting time, hashtags, caption tricks, or settings; otherwise a single line
+is enough, since most creators are spending effort there without saying so.
+
+**Hand-off.** One closing line pointing to `hook-writer` for the opening and
+`story-loop-writer` for the body of whichever video was picked first.
+
+Sequencing a new account: post the video that is strongest on all four
+attributes and most unmistakably on band first, because it sets the
+fingerprint; save conversion pieces (tours, offers) until the band is
+established.
 
 ## Avatar and topic band worksheet (not shown in the video)
 

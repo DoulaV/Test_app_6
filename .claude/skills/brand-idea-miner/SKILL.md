@@ -108,6 +108,26 @@ outlier log.
 **Hand-off.** One line: which idea goes to hook-writer and story-loop-writer
 next.
 
+## Edge cases the videos do not settle (not shown in the videos)
+
+- **Same content type, adjacent niche.** A food reel used for a budgeting
+  account: all seven legos are informative because the consumption
+  psychology is about the content type, but its topic and angle are
+  rejected anyway by the collision rule. Take structure, drop the idea.
+- **One reference, no pattern.** Holding from a single outlier is a guess.
+  Say so, hold what the presenter's general observation supports (hook
+  style, visual format), and mark every hold provisional until two weeks of
+  logging confirm or overturn it.
+- **When the topic is the niche's cliche.** The presenter's default keeps the
+  topic, but the general rule wins: if the topic is what every account in the
+  niche already posts, remix it too.
+- **A described reference counts.** A reel the user describes in words is a
+  pasted reference: log it as one row, then give the seed path for the rest.
+- **Audio.** Hold the audio mood, not the track; the specific trending sound
+  is chosen on post day.
+- **Hooks in the Idea template** are provisional lines to show the shape;
+  hook-writer owns the final wording.
+
 ## Manual research path (not shown in the videos)
 
 Without a tool: a spreadsheet with one row per watchlist account. For each,

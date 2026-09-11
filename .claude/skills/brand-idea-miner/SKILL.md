@@ -87,7 +87,16 @@ Level reached: 1 signal / 2 belief / 3 action, and what would lift it a level
 
 **Audit** (when the user brings an idea or draft): the five-element row, the
 level it reaches, the bank-shot check (does it claim authority or command
-action anywhere), and the rewrite of the failing elements.
+action anywhere), and the rewrite of the failing elements. Write the primary
+rewrite in the full Idea template above so the seven legos and the proof plan
+are forced; alternates can be shorter. An idea that fails signal outright
+(no value the viewer would thank you for) reaches "below level 1"; say so
+rather than rounding up.
+
+Include the Research setup and Outlier log blocks only when the user has a
+watchlist, a tool, or pasted references. Otherwise say which legos are
+therefore guessed and give the 15-minute seed path instead of inventing an
+outlier log.
 
 **Hand-off.** One line: which idea goes to hook-writer and story-loop-writer
 next.

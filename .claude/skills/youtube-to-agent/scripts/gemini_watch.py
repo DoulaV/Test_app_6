@@ -60,7 +60,15 @@ def load_key():
     return None
 
 
-def build_prompt(question):
+TRANSCRIPT_PROMPT = """Produce a timestamped transcript of everything spoken in this video, as close to verbatim as you can.
+Format: one line per 5 to 15 seconds of speech, each starting with [MM:SS]. Do not summarize, do not skip sections, do not add commentary.
+Where on-screen text appears that is not spoken (titles, lists, diagrams, URLs), add a line starting with [MM:SS SCREEN] quoting it exactly.
+Continue until the end of the video."""
+
+
+def build_prompt(question, mode="beats"):
+    if mode == "transcript":
+        return TRANSCRIPT_PROMPT
     prompt = FALLBACK_PROMPT
     if PROMPT_PATH.is_file():
         text = PROMPT_PATH.read_text(errors="replace")
@@ -128,6 +136,8 @@ def main():
     ap.add_argument("--model", default=DEFAULT_MODEL)
     ap.add_argument("--api", choices=["auto", "interactions", "generate"], default="auto")
     ap.add_argument("--raw", action="store_true", help="also dump the raw JSON response next to --out")
+    ap.add_argument("--mode", choices=["beats", "transcript"], default="beats",
+                    help="beats (default): the analysis beat sheet; transcript: near-verbatim timestamped speech plus on-screen text, for when captions are unavailable")
     args = ap.parse_args()
 
     if not YOUTUBE_RE.match(args.url):
@@ -139,7 +149,7 @@ def main():
             "export GEMINI_API_KEY=... or add it to ~/.config/youtube-to-agent/.env"
         )
 
-    prompt = build_prompt(args.question)
+    prompt = build_prompt(args.question, args.mode)
     order = {"auto": ["interactions", "generate"], "interactions": ["interactions"], "generate": ["generate"]}[args.api]
     text, raw, errors = "", None, []
     for api in order:
@@ -169,7 +179,8 @@ def main():
     if not text:
         sys.exit("Gemini returned nothing usable.\n" + "\n".join(errors))
 
-    header = f"# Gemini watch report\n\n- **Source:** {args.url}\n- **Model:** {args.model}\n- **Note:** independent read by Gemini; reconcile against frames before trusting details.\n\n"
+    kind = "transcript" if args.mode == "transcript" else "watch report"
+    header = f"# Gemini {kind}\n\n- **Source:** {args.url}\n- **Model:** {args.model}\n- **Note:** independent read by Gemini; reconcile against frames before trusting details.\n\n"
     output = header + text + "\n"
     if args.out:
         out = Path(args.out)

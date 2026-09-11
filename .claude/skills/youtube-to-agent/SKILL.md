@@ -128,6 +128,14 @@ do not treat a failed video download as a dead end. When you end up with no
 frames at all, say so in the analysis and mark every visual claim "Gemini
 only".
 
+When yt-dlp is blocked outright (YouTube's bot check now refuses even
+caption and metadata requests from some cloud machines), run Path C twice:
+once in the default beats mode and once with `--mode transcript`, which asks
+Gemini for near-verbatim timestamped speech plus quoted on-screen text. The
+transcript stands in for captions as "what was said"; the beats stand in for
+frames as "what was seen". Titles and authors still come free from
+`https://www.youtube.com/oembed?url=<video-url>&format=json`.
+
 Path C in numbers, from a 16-minute test video: about 70 seconds wall clock,
 about 90k video tokens in, about 2.3k tokens out, with the caption text and
 Gemini's read agreeing on every substantive point and Gemini adding the

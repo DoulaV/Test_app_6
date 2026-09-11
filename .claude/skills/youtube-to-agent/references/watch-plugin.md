@@ -95,4 +95,9 @@ curl -X POST "https://generativelanguage.googleapis.com/v1beta/interactions" \
   -d '{"model":"gemini-flash-latest","input":[{"type":"text","text":"..."},{"type":"video","uri":"https://www.youtube.com/watch?v=..."}]}'
 ```
 
+`--mode transcript` returns near-verbatim timestamped speech with on-screen
+text quoted on `[MM:SS SCREEN]` lines; use it when captions cannot be
+fetched. `--question "..."` weights the beats mode toward the target
+capability.
+
 Never paste the key into chat, the repo, the spec, or a generated skill.

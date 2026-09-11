@@ -2,8 +2,12 @@
 """Scaffold a Claude Code skill from a youtube-to-agent spec.json.
 
 Usage:
-  python3 scaffold_agent.py <spec.json> [--dest .claude/skills] [--analysis analysis.md]
+  python3 scaffold_agent.py <spec.json> [--dest .claude/skills] [--analysis a1.md a2.md ...]
                             [--force] [--no-gitignore]
+
+The spec may carry a single "source" object or a "sources" list (one entry per
+video, each with an optional short "tag" like V1). With several sources, cite
+evidence as "V1 t=MM:SS" so every claim still points at one video.
 
 Creates <dest>/<name>/ with SKILL.md, references/source-notes.md,
 references/verbatim-assets.md and evals/evals.json. Refuses to overwrite an
@@ -67,16 +71,26 @@ def render_gaps(gaps):
     return "\n".join(f"- {g} (not shown in the video)" for g in gaps)
 
 
+def sources_of(spec):
+    """Return the list of source dicts, whether the spec used 'source' or 'sources'."""
+    if spec.get("sources"):
+        return list(spec["sources"])
+    return [spec.get("source", {})] if spec.get("source") else []
+
+
 def render_source_notes(spec, analysis_text):
-    src = spec.get("source", {})
-    head = [
-        f"# Source notes: {src.get('title') or spec['name']}",
+    srcs = sources_of(spec)
+    head = [f"# Source notes: {spec.get('title') or title_from(spec['name'])}", ""]
+    for i, src in enumerate(srcs, 1):
+        tag = f"[{src.get('tag') or f'V{i}'}] " if len(srcs) > 1 else ""
+        head += [
+            f"- {tag}{src.get('title', 'untitled')}: {src.get('url_or_path', 'unknown')}"
+            f" ({src.get('author', 'unknown')}, {src.get('duration', 'unknown')})",
+        ]
+    head += [
         "",
-        f"- Source: {src.get('url_or_path', 'unknown')}",
-        f"- Author: {src.get('author', 'unknown')}",
-        f"- Duration: {src.get('duration', 'unknown')}",
-        "",
-        "Every claim below carries a timestamp so it can be verified by scrubbing to it.",
+        "Every claim below carries a timestamp so it can be verified by scrubbing to it."
+        + (" Timestamps are prefixed with the source tag when there is more than one video." if len(srcs) > 1 else ""),
         "",
     ]
     if analysis_text:
@@ -127,7 +141,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("spec")
     ap.add_argument("--dest", default=".claude/skills")
-    ap.add_argument("--analysis", help="analysis.md to embed in references/source-notes.md")
+    ap.add_argument("--analysis", nargs="+", help="one or more analysis.md files to embed in references/source-notes.md (one per video, in source order)")
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--no-gitignore", action="store_true", help="do not add .youtube-to-agent/ to the repo .gitignore")
     args = ap.parse_args()
@@ -147,15 +161,22 @@ def main():
     (skill_dir / "references").mkdir(parents=True, exist_ok=True)
     (skill_dir / "evals").mkdir(parents=True, exist_ok=True)
 
-    src = spec.get("source", {})
+    srcs = sources_of(spec)
+    src = srcs[0] if srcs else {}
+    if len(srcs) > 1:
+        source_title = f"{len(srcs)} videos"
+        source_ref = "; ".join(f"[{s.get('tag') or f'V{i}'}] {s.get('title', 'untitled')}" for i, s in enumerate(srcs, 1))
+    else:
+        source_title = src.get("title") or "source video"
+        source_ref = src.get("url_or_path") or "unknown source"
     template = TEMPLATE.read_text()
     fields = {
         "name": name,
         "description": spec["description"].strip().replace("\n", " "),
         "title": spec.get("title") or title_from(name),
         "capability": spec["capability"].strip(),
-        "source_title": src.get("title") or "source video",
-        "source_ref": src.get("url_or_path") or "unknown source",
+        "source_title": source_title,
+        "source_ref": source_ref,
         "prerequisites": render_list(spec.get("prerequisites"), "- None beyond a working Claude Code session."),
         "procedure": render_procedure(spec.get("procedure")),
         "decision_rules": render_rules(spec.get("decision_rules")),
@@ -167,7 +188,9 @@ def main():
         body = body.replace("{{" + k + "}}", v)
     (skill_dir / "SKILL.md").write_text(body)
 
-    analysis_text = Path(args.analysis).read_text() if args.analysis else ""
+    analysis_text = ""
+    if args.analysis:
+        analysis_text = "\n\n---\n\n".join(Path(a).read_text() for a in args.analysis)
     (skill_dir / "references" / "source-notes.md").write_text(render_source_notes(spec, analysis_text))
     (skill_dir / "references" / "verbatim-assets.md").write_text(render_assets(spec))
 

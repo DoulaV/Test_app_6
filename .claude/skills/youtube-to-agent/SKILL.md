@@ -257,6 +257,29 @@ End with a short report the user can act on without scrolling back:
 - Which of the three systems were used and which are still missing, with
   the exact commands to add them.
 
+## Several videos into one skill
+
+When the user gives two or more videos on one theme (three tutorials on
+Instagram growth, say), build one skill, not three, and make the merge
+visible:
+
+1. Run Step 1 and Step 2 per video, in parallel, each in its own working
+   directory, so every beat sheet stands on its own.
+2. Tag the sources V1, V2, V3 in the order the user gave them and prefix
+   every timestamp with its tag ("V2 t=04:10") from the spec onward.
+3. Before writing the spec, write `<workdir>/merge.md` with three lists:
+   points all videos agree on (these become the procedure's spine), points
+   only one video makes (keep them, attributed), and points where the videos
+   disagree (state both sides and pick one with a reason, or offer the
+   choice to the user in the skill's decision rules). Disagreements are the
+   most valuable content in a merged skill; do not average them away.
+4. Use `"sources": [...]` in the spec instead of `"source"`, and pass all
+   analyses to the scaffolder: `--analysis v1/analysis.md v2/analysis.md
+   v3/analysis.md`.
+5. Name the skill after the capability, not the videos, and keep it to one
+   capability. If the merge list shows two unrelated capabilities, say so
+   and build two skills.
+
 ## Working notes
 
 - The uploaded-file case ("save and share this video to Claude Code") is a

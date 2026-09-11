@@ -60,10 +60,21 @@ square brackets inline, then a short table:
 |---|---|---|---|
 ```
 
+For a script the user will read aloud, add a clean copy below the labelled
+one with the labels stripped, since inline labels get in the way of
+recording.
+
 Follow with two or three sentences on what you changed and why, and one
 line stating the assumed audience and what they have at risk. When the user
 has not supplied a detail the loop needs (a number, a date, what was said),
 write it as a bracketed placeholder shaped like the real thing and say so.
+Dramatised colour you add for texture (an object, a time of day, a gesture)
+is not a fact the user gave; either bracket it too or list it under
+assumptions so it can be checked. In the head-fake table, "clue planted at"
+quotes the clue line for spoken scripts and gives a line reference for
+written ones. For a video, on-screen text and the opening three lines belong
+to `hook-writer`; add a short optional on-screen text block only when the
+user's medium is usually watched muted.
 
 For an audit, open with this table before any rewrite:
 
@@ -84,6 +95,9 @@ say so:
 | Length | Loops | Where |
 |---|---|---|
 | Under 60 seconds or under 200 words | one master loop | stakes and big question in the first two lines, one head fake, one re-hook into the close |
+
+Spoken pace for timed scripts is about 2.5 to 3 words per second, so a 30
+second reel holds 75 to 90 words and a 45 second one 110 to 135.
 | 2 to 8 minutes or up to 1500 words | one master question plus a local loop per section | re-hook at every section boundary |
 | Longer talks and scripts | master question loaded in the first minute, local loops every 2 to 3 minutes | never let a section end on a full resolution |
 

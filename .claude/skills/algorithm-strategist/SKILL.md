@@ -98,7 +98,11 @@ is enough, since most creators are spending effort there without saying so.
 Sequencing a new account: post the video that is strongest on all four
 attributes and most unmistakably on band first, because it sets the
 fingerprint; save conversion pieces (tours, offers) until the band is
-established.
+established. When the sharpest-fingerprint video and the biggest comment
+magnet differ, fingerprint wins for the first post and the comment magnet
+goes second, since comments only help once the sample is the right people.
+When the user gives an audience but no platform, assume vertical short-form
+and say so.
 
 ## Avatar and topic band worksheet (not shown in the video)
 

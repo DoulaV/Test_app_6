@@ -21,7 +21,7 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-DEFAULT_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
+DEFAULT_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
 BASE = "https://generativelanguage.googleapis.com/v1beta"
 ENV_FILES = [
     Path.home() / ".config" / "youtube-to-agent" / ".env",

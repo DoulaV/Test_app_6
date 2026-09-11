@@ -7,7 +7,10 @@ same shape /watch produces so the analysis step does not care which path ran.
 
 Usage:
   python3 local_ingest.py <video-file> --out-dir DIR [--interval 2] [--width 1280]
-                          [--whisper-model small] [--no-transcript] [--no-install]
+                          [--whisper-model small] [--captions FILE.vtt] [--no-transcript] [--no-install]
+
+--captions skips Whisper and uses a caption file (for example one fetched by
+fetch_captions.py), which is faster and usually more accurate for speech.
 
 Dependencies are pip-installed on first run unless --no-install is given:
   imageio-ffmpeg (bundled ffmpeg binary), faster-whisper (transcription).
@@ -64,6 +67,7 @@ def main():
     ap.add_argument("--interval", type=float, default=2.0, help="seconds between frames")
     ap.add_argument("--width", type=int, default=1280, help="frame width in px (keep high for on-screen text)")
     ap.add_argument("--whisper-model", default="small", help="faster-whisper model size: tiny, base, small, medium")
+    ap.add_argument("--captions", help="use this .vtt/.srt file for the transcript instead of running Whisper")
     ap.add_argument("--no-transcript", action="store_true")
     ap.add_argument("--no-install", action="store_true", help="fail instead of pip-installing missing deps")
     args = ap.parse_args()
@@ -94,7 +98,13 @@ def main():
 
     # Transcript
     transcript_lines, transcript_source = [], "none"
-    if not args.no_transcript:
+    if args.captions and not args.no_transcript:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from fetch_captions import parse_vtt  # noqa: E402
+        cues = parse_vtt(Path(args.captions).read_text(errors="replace"))
+        transcript_lines = [f"[t={fmt(s)}] {txt}" for s, txt in cues]
+        transcript_source = f"captions ({Path(args.captions).name})"
+    elif not args.no_transcript:
         wav = out / "audio.wav"
         audio_ok = subprocess.run(
             [ffmpeg, "-hide_banner", "-loglevel", "error", "-y", "-i", str(video), "-vn", "-ac", "1", "-ar", "16000", str(wav)]

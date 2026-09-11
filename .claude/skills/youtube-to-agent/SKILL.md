@@ -55,9 +55,10 @@ Missing pieces and what to do about them:
   Keys"). They can export it as `GEMINI_API_KEY` or put
   `GEMINI_API_KEY=...` in `~/.config/youtube-to-agent/.env`. Never ask the user
   to paste the key into chat, and never write it into the repo.
-- **Nothing available at all.** Fall back to captions only: `yt-dlp` can pull
-  captions with no API key. See `references/watch-plugin.md` for the command.
-  Tell the user the result will be speech only, with no visual information.
+- **Nothing available at all.** Fall back to captions only with
+  `scripts/fetch_captions.py` (Path D below). It needs only `yt-dlp`, which
+  `pip install yt-dlp` provides. Tell the user the result is speech only, with
+  no visual information.
 
 ## Step 1: Watch the video
 
@@ -86,12 +87,15 @@ the analysis step instead of being auto-cleaned.
 ### Path B: local video file, no plugin
 
 ```bash
-python3 .claude/skills/youtube-to-agent/scripts/local_ingest.py <video-file> --out-dir <workdir> [--interval 2] [--width 1280]
+python3 .claude/skills/youtube-to-agent/scripts/local_ingest.py <video-file> --out-dir <workdir> [--interval 2] [--width 1280] [--captions file.vtt]
 ```
 
 This extracts one frame every N seconds and transcribes the audio with a local
 Whisper model (it installs `imageio-ffmpeg` and `faster-whisper` on first run
-if they are missing). It writes `report.md` in the same format `/watch`
+if they are missing). Pass `--captions` with a subtitle file when you have one;
+it is faster and more accurate than Whisper. Pick the frame interval from the
+duration: 2 seconds under 3 minutes, 5 seconds up to 10 minutes, 10 seconds
+beyond that, so the frame count stays near 100. It writes `report.md` in the same format `/watch`
 produces (frame paths with `t=MM:SS` markers plus a timestamped transcript).
 Then Read the frames. Read them in parallel in batches; each frame path in
 the report carries its timestamp.
@@ -108,6 +112,26 @@ focus it on the target capability. Run it alongside Path A when both are
 available. Gemini is a witness, not an oracle: treat its output as a second
 transcript to be reconciled with the frames, and mark anything only Gemini
 reports as "Gemini only".
+
+### Path D: YouTube URL, no plugin, with or without a Gemini key
+
+```bash
+python3 .claude/skills/youtube-to-agent/scripts/fetch_captions.py <url> --out-dir <workdir>
+```
+
+This pulls the video's captions with yt-dlp (no key needed) and writes a
+timestamped transcript plus a 30-second-paragraph version for reading. Pair it
+with Path C when a Gemini key exists: captions give exact wording, Gemini gives
+the visuals. In cloud environments YouTube often refuses the video stream with
+a 403 "confirm you're not a bot" error even though captions download fine, so
+do not treat a failed video download as a dead end. When you end up with no
+frames at all, say so in the analysis and mark every visual claim "Gemini
+only".
+
+Path C in numbers, from a 16-minute test video: about 70 seconds wall clock,
+about 90k video tokens in, about 2.3k tokens out, with the caption text and
+Gemini's read agreeing on every substantive point and Gemini adding the
+on-screen labels and URLs the captions could not.
 
 Run the ingestion paths in parallel where possible. Write everything into one
 working directory (default `.youtube-to-agent/<slug>/`, which is gitignored by

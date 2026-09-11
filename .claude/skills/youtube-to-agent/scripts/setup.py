@@ -102,7 +102,7 @@ def main():
         "gemini": {
             "ready": bool(gemini_key),
             "key_source": gemini_source,
-            "model": os.environ.get("GEMINI_MODEL", "gemini-3.8-flash"),
+            "model": os.environ.get("GEMINI_MODEL", "gemini-flash-latest"),
             "get_key": GEMINI_KEY_URL,
             "env_file": str(ENV_FILES[0]),
         },

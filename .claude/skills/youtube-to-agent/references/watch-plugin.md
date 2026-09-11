@@ -83,7 +83,7 @@ export GEMINI_API_KEY=...                       # this shell
 mkdir -p ~/.config/youtube-to-agent && echo "GEMINI_API_KEY=..." >> ~/.config/youtube-to-agent/.env   # persistent
 ```
 
-Model defaults to `gemini-3.8-flash`; override with `GEMINI_MODEL` or
+Model defaults to `gemini-flash-latest` (an alias Google keeps pointed at the current Flash model, so it does not go stale); override with `GEMINI_MODEL` or
 `--model`. The script tries the `interactions` endpoint first and falls back
 to `generateContent`, so it survives either API generation.
 
@@ -92,7 +92,7 @@ Request shape (for reference, the script does this for you):
 ```bash
 curl -X POST "https://generativelanguage.googleapis.com/v1beta/interactions" \
   -H "x-goog-api-key: $GEMINI_API_KEY" -H 'Content-Type: application/json' \
-  -d '{"model":"gemini-3.8-flash","input":[{"type":"text","text":"..."},{"type":"video","uri":"https://www.youtube.com/watch?v=..."}]}'
+  -d '{"model":"gemini-flash-latest","input":[{"type":"text","text":"..."},{"type":"video","uri":"https://www.youtube.com/watch?v=..."}]}'
 ```
 
 Never paste the key into chat, the repo, the spec, or a generated skill.

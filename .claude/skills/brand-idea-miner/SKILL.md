@@ -150,12 +150,16 @@ re-open it for remix and hold whatever the new winners share instead.
 
 ## Worked example
 
-The bank shot from V1 t=01:07, applied to an idea title: "Why I'm the best
-English tutor in Egypt: 5 methods" claims authority and fails the check.
-"5 things I changed that took a student from 62 to 88 in three months"
-states a result and a method, is relevant to parents, non-obvious if the
-five things are, proven by the numbers, and actionable. The viewer draws the
-conclusion the first title tried to assert.
+The bank shot from V1 t=01:07, applied to an idea title: "Why we're the best
+wedding photographers in Cairo: our 5 rules" claims authority and fails the
+check; a competitor could post it word for word, so it fails the collision
+test too. "The 5 rules that let us shoot a 400-guest wedding with one
+photographer and deliver in 48 hours" states a result and a method, is
+relevant to couples comparing vendors, non-obvious if the rules are (the
+collision here is logistics from event catering, where one cook plates for
+400), proven by the numbers, and actionable enough that a couple can ask
+any photographer the same five questions. The viewer draws the conclusion the
+first title tried to assert.
 
 ## References
 

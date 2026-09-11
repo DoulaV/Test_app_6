@@ -93,6 +93,13 @@ are forced; alternates can be shorter. An idea that fails signal outright
 (no value the viewer would thank you for) reaches "below level 1"; say so
 rather than rounding up.
 
+In an audit with no outlier log, "Beats" names the user's own draft and the
+weak point the rewrite fixes.
+
+Seasonal niches (exams, Ramadan, tax season, holidays) behave like news
+inside their window: use the 7 to 14 day date filter in season and the
+evergreen window outside it.
+
 Include the Research setup and Outlier log blocks only when the user has a
 watchlist, a tool, or pasted references. Otherwise say which legos are
 therefore guessed and give the 15-minute seed path instead of inventing an
@@ -149,7 +156,10 @@ mechanism: people trust conclusions they reach themselves. Use the mechanism
 and drop the vocabulary. In practice: claim only what the proof supports,
 show the inputs that produced the outputs, attribute borrowed proof, and let
 the viewer decide what that says about you. Suggestion done honestly is
-just showing your work.
+just showing your work. The same rule covers implied comparison: an idea
+built as "questions to ask any tutor" or "signs of a bad X" is a superiority
+claim by elimination, so keep it to checks the viewer can run, not digs at
+competitors.
 
 ## When a pattern has decayed (not shown in the videos)
 

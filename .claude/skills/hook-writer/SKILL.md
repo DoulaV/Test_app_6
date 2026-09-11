@@ -11,6 +11,13 @@ Learned from: How to Create Irresistible Hooks (and blow up your content) (https
 in `references/source-notes.md`; anything copied from the screen is in
 `references/verbatim-assets.md`.
 
+## Related skill
+
+The hook covers only the opening lines. When the user also needs the body of
+the piece to hold attention, or shares a full script, use `story-loop-writer`
+(stakes, big question, head fake, re-hook) for everything after the hook.
+The snapback of a hook is a natural first big question for the loop.
+
 ## Prerequisites
 
 - A topic, the target viewer, and the format (short-form vertical, YouTube long-form, or written) from the user. Ask for the target viewer if it is missing; the lean-in lever depends on it.

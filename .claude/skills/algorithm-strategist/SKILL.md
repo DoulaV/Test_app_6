@@ -68,12 +68,21 @@ equipment, for women 25 to 40 who work from home and hate gyms".
 | Video | Topic | On avatar? | Relevant | Non-obvious + doable | Absorbable | Short distance | Result / verdict |
 ```
 
-Score the four attributes as yes, partly, or no. Mark off-avatar videos
-plainly and say what they cost.
+Score the four attributes as yes, partly, or no. "On avatar?" takes yes,
+no, or adjacent; adjacent means it hits the avatar's pain but recruits a
+different crowd (a rant about gym prices for a home-workout channel), and
+those are the videos most worth reframing rather than dropping. When the
+user describes a batch of videos as a group, score them as one row and say
+that splitting them out would sharpen the verdict.
 
 **Flop diagnosis.** Two lines: "Fit score side: ..." and "Engagement side:
 ...", each with the evidence from the user's own list, then the verdict on
-which side failed.
+which side failed. When both are plausible, name the primary one and give
+the test that separates them: post several same-band videos with a clear
+point of view; if the first few climb off the floor, fit was the problem;
+if they do not, engagement is, and the hook and story skills take over.
+The source says an off-avatar hit hurts "the next several videos"; treat
+that as roughly the next five to ten posts, not a permanent mark.
 
 **Next videos.** Three to five ideas, each with: the avatar's pain it
 solves, the non-obvious point, the small action and its result, and a

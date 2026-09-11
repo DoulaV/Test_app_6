@@ -100,10 +100,18 @@ Seasonal niches (exams, Ramadan, tax season, holidays) behave like news
 inside their window: use the 7 to 14 day date filter in season and the
 evergreen window outside it.
 
-Include the Research setup and Outlier log blocks only when the user has a
-watchlist, a tool, or pasted references. Otherwise say which legos are
-therefore guessed and give the 15-minute seed path instead of inventing an
-outlier log.
+Include the Outlier log only when there are real references to log (a
+watchlist, a tool, or pasted or described reels); never invent one. Include
+the Research setup whenever the user asks for research or has no watchlist
+yet, even if their account list is placeholders. Without outliers, rank the
+shortlist by how dominant the beaten category is in the niche and how
+defensible the proof is, and say that is the substitute. "Beats" then names
+the category of video the idea replaces, and "Level reached" is the level the
+idea is designed to reach, with the level it reaches before own proof exists.
+
+Thin pools (a small-language niche, a young category) need longer windows:
+6 to 12 months for the core list, and adjacent lists in a bigger language
+for structure only.
 
 **Hand-off.** One line: which idea goes to hook-writer and story-loop-writer
 next.
@@ -176,7 +184,9 @@ mechanism: people trust conclusions they reach themselves. Use the mechanism
 and drop the vocabulary. In practice: claim only what the proof supports,
 show the inputs that produced the outputs, attribute borrowed proof, and let
 the viewer decide what that says about you. Suggestion done honestly is
-just showing your work. The same rule covers implied comparison: an idea
+just showing your work. Content that shows or narrates a real client, patient, or student needs
+written consent and de-identification, and a case story is not published
+until the case exists. The same rule covers implied comparison: an idea
 built as "questions to ask any tutor" or "signs of a bad X" is a superiority
 claim by elimination, so keep it to checks the viewer can run, not digs at
 competitors.

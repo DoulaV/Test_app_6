@@ -116,7 +116,7 @@ def render_assets(spec):
     for a in assets:
         kind = a.get("kind", "asset")
         ev = ", ".join(a.get("evidence") or [])
-        lines += [f"## {kind}" + (f" (t={ev})" if ev else ""), "", "```", a.get("text", "").rstrip(), "```", ""]
+        lines += [f"## {kind}" + (f" ({ev})" if ev else ""), "", "```", a.get("text", "").rstrip(), "```", ""]
     return "\n".join(lines) + "\n"
 
 

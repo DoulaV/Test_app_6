@@ -47,7 +47,7 @@ off-band budget, in step 8 and in "The off-band budget" below.
 1. **State the working definition before any advice, because it changes what the task is.** Branding is a pairing of things. Good branding is an intentional pairing of relevant things done consistently. Brand is the byproduct: the association the audience inherently holds. Nike paired itself with Michael Jordan and owns athletic greatness in basketball; Harley-Davidson paired itself with freedom for so long that the customer pictures the open road. This reframing matters operationally, because it turns brand from a feeling into a repeatable action: decide the association, then pair yourself with it over and over. Say this to the user in one or two lines; it is the reason the rest of the procedure works. (see source-notes: t=01:05, t=01:30, t=03:00)
 2. **Audit the brand that already exists before designing one.** The brand exists whether or not it was chosen; if the creator did not shape the associations, the audience did it for them. Most people arrive with an accidental brand, not a blank page. Read the last 15 to 30 posts and write two columns: what a stranger would say this account is about, and what the creator says it is about. Name every gap between them. Pull the recurring praise out of the comments, because that is the association that is actually landing, and pull the recurring objection, because that is the friction. An audit finding beats a designed intention every time, since it is evidence and the intention is a guess. (see source-notes: t=03:40, t=08:20, t=17:00, t=22:00)
 3. **Run the Brand Journey Framework backwards, four questions in order.** What is the desired outcome; what do I have to be known for in order for that to happen; what do I have to do in order to be known for that; what do I have to learn in order to do that. Working backwards is the point: the fourth question lands on a day-one action, and the first question stops the most common failure, which is posting with no idea what it is meant to accomplish. Alice asks which road to take, is asked where she is trying to end up, says she does not know, and is told that either road will take her there. Write all four answers down as sentences, not bullets, and keep them where the creator can see them. (see source-notes: t=04:00, t=05:30, t=05:45)
-4. **Write both association lists: what you want to be associated with, and what you refuse.** The first list most people can produce. The second is the one Caleb says nearly everyone ignores, and in a saturated market it is what makes you distinct, because you are defined by what you will not do as much as by what you will. The refusal list is also the decision rule for every collaboration, podcast, sponsor and shared stage, since a pairing transfers association in both directions: appearing repeatedly alongside people the audience distrusts makes the audience aware of you in light of that distrust, and awareness is not worth that trade. Aim for five to seven on each side, concrete enough to answer a real invitation with. (see source-notes: t=06:00, t=07:30, t=10:00, t=12:00)
+4. **Write both association lists: what you want to be associated with, and what you refuse.** The first list most people can produce. The second is the one Caleb says nearly everyone ignores, and in a saturated market it is what makes you distinct, because you are defined by what you will not do as much as by what you will. The refusal list is also the decision rule for every collaboration, podcast, sponsor and shared stage, since a pairing transfers association in both directions: appearing repeatedly alongside people the audience distrusts makes the audience aware of you in light of that distrust, and awareness is not worth that trade. Aim for five to seven on each side, concrete enough to answer a real invitation with. When an invitation is genuinely borderline, Caleb's own tiebreak is the gut: if it gives you a bad feeling, it is not worth the exposure, whatever the audience size. (see source-notes: t=06:00, t=07:30, t=10:00, t=11:56)
 5. **Position into a gap rather than into the middle of the field.** Find what is missing in the industry and own it. There are three places a gap can come from: the information you have that others do not, your philosophy on the subject, or your personality and the way you see it. Caleb's own worked example is positioning against a space obsessed with virality and view counts by standing for brands built on long-term trust. The fourth source is the creator's own story, which is where the genuinely unduplicable positions come from: the challenges, turning points and experiences nobody else had. Test the position by asking what a competitor would have to give up to copy it. (see source-notes: t=12:00, t=12:20, t=13:00, t=14:30)
 6. **Write the Brand Story in three parts: Catalyst, Core Truth, Proof.** Offered as a replacement for problem-transformation-outcome, which is too narrow for a person. Catalyst is why the brand exists, because something needed to change: what needs to change, what do you see that others do not, why do you feel the need to act on it. Core Truth is what makes you different, because blending in is being forgotten: what makes you different, what does the audience already praise you for, why would they care and what does it give them. Proof is how the identity is reinforced every day, in what you say and in what you do, not once in a launch post. Show the truth rather than claiming it: instead of Jeff Bezos saying he is resourceful, the story of the door he used as a desk. Nail the three and the brand does not just have a story, it has loyalty. (see source-notes: t=26:30, t=27:00, t=28:30, t=30:30, t=16:20, t=33:00)
 7. **Choose a narrow core topic, then set the 80/20 split deliberately.** The friend who is great at many things reads as good at none; the friend obsessed with woodworking reads as credible, so credibility comes from obsession. Gary Vaynerchuk spent years on Wine Library TV before marketing, and the wine is what bought the right to talk about marketing. But a single topic forever bores the audience and bores the creator, so spend roughly 80% on the core topic, ideally the one aligned with the offer or revenue, and roughly 20% on genuine other interests. The work-colleague analogy: one thing in common makes you colleagues, two makes you work friends, more makes you friends who stay friends after you leave. Each extra interest is another at-bat for a stranger to connect. Choose pillars by three criteria: what the creator is most convicted about, because conviction transfers; what resonates with the audience right now; and what they can explain in a way that makes action easy. (see source-notes: t=33:00, t=34:20, t=35:00, t=46:00, t=47:30, t=48:00, t=50:00)
@@ -59,7 +59,7 @@ off-band budget, in step 8 and in "The off-band budget" below.
 
 - When the user asks what to post about, what their niche is, or why nothing is working, and has never written down a desired outcome: stop and run the Brand Journey backwards first; every downstream answer changes with the outcome (see source-notes: t=04:00, t=05:30)
 - When the user already has an account with posts: audit before designing: read the posts and comments, write what a stranger would say it is about next to what the creator says, and work from the gap (see source-notes: t=03:40, t=22:00)
-- When the user asks whether to accept a collaboration, podcast, sponsorship, guest spot or shared platform: check it against the refusal list and ask what association it transfers in both directions; if it conflicts, decline, because awareness is not worth the trade (see source-notes: t=10:00, t=12:00)
+- When the user asks whether to accept a collaboration, podcast, sponsorship, guest spot or shared platform: check it against the refusal list and ask what association it transfers in both directions; if it conflicts, decline, because awareness is not worth the trade (see source-notes: t=10:00, t=11:56)
 - When the user wants to broaden into a second topic: ask whether they are known for the first one yet with consistent positive engagement; if not, hold, and if yes, find the layer that connects the two rather than leaping (see source-notes: t=37:00, t=43:20)
 - When the user is new, has no established reach, or is trying to break a plateau: put the split near 100/0 and say why: the 20% is paid for with reach they do not have yet (see source-notes: t=48:00)
 - When the user has reliable reach but weak follower conversion or weak loyalty: spend the full 20% on genuine other interests, and say which ones, because loyalty comes from having more than one thing in common (see source-notes: t=50:00)
@@ -81,8 +81,34 @@ off-band budget, in step 8 and in "The off-band budget" below.
 
 ## Output format
 
-Open with the single association sentence, then the supporting work. Never
-open with a preamble about brand being important.
+Requests come in three shapes and only the first uses the whole format.
+Decide which one you are in before writing anything.
+
+**Design** ("what should I be known for", "help me define my brand"). Use the
+full format below.
+
+**Audit** ("is my account working", "why does nobody follow"). Lead with the
+audit table and the drift verdict, then give only the parts of the format the
+audit showed were missing or wrong. Do not regenerate a whole brand when the
+finding is that two associations are fighting each other.
+
+**Decision** (one invitation, one sponsorship, one new topic, one bio). Answer
+the decision first, in the first two sentences, with the reasoning from the
+association lists. Then give only the piece of the format that stops the
+question recurring: usually the refusal list, sometimes the pillar split. Do
+not produce a brand document because someone asked whether to go on a podcast.
+
+**When the prerequisites are missing.** The desired outcome is required and it
+is often absent. Never hold the whole answer hostage to it. Instead: answer
+everything that does not depend on it, state the two or three plausible
+outcomes and which part of the answer each one would change, ask the one
+question, and mark the affected sections provisional. A decision request can
+almost always be answered without the outcome, because a refusal is a refusal
+under any outcome. A design request cannot, so deliver the audit and the
+association lists and leave the Brand Journey table for the reply.
+
+Open the design output with the single association sentence, then the
+supporting work. Never open with a preamble about brand being important.
 
 **Association sentence.** One line, in the form "<name> is the person who
 <does the specific thing> for <the people>, and stands for <the belief>".
@@ -134,11 +160,6 @@ ratio, the recurring objections to answer inside content, and the next
 expansion trigger.
 
 **Hand-off.** One closing line naming the next skill.
-
-When auditing rather than designing, lead with the audit table and the drift
-verdict, then give only the parts of the above that the audit showed were
-missing or wrong. Do not regenerate a whole brand when the finding is that
-two associations are fighting each other.
 
 ## Auditing a brand that already exists (not shown in the video)
 

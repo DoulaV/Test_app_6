@@ -25,7 +25,9 @@ Every claim below carries a timestamp so it can be verified by scrubbing to it.
 | 06:00 | Associations you want. What do I want the audience to think of when they hear my name. Everything you create should reinforce those associations. | Positive associations. |
 | 07:30 | The part he says 99.9% of people ignore: what do you NOT want to be associated with. In a saturated market you stand out by what you refuse. This is how you protect the brand from dilution and misinterpretation. "If you don't actively shape your associations, your audience is going to do it for you." | The protective half. |
 | 09:00 | Intentional is not the same as good. You can intentionally pair consistently with the wrong things, and the audience will draw exactly that association. | The trap. |
-| 10:00 | Worked example: repeatedly appearing on podcasts with untrustworthy people in the business education space transfers their association to you. "Ultimately awareness is not worth the trade. What are those people going to be aware of? They're going to be aware of you in light of that association." | Collaborations as pairings. |
+| 10:00 | Worked example: consistently appearing on podcasts or collab videos with untrustworthy people in the online education space means the audience starts to inherently associate you with that crowd. He names it as one of the biggest problems in business education right now: people with real value to add lose his trust by appearing enough times alongside people he cannot trust. | Collaborations as pairings. |
+| 11:22 | The gut test, and his own live example. "If you get a bad feeling in your gut, if you don't think that it's the right move, it's not worth the exposure." He has said yes to every podcast so far, but names people he expects to ask and will refuse. | The rule applied to himself. |
+| 11:56 | "Ultimately awareness is not worth the trade. What are those people going to be aware of? They're going to be aware of you in light of that association." | The line that decides it. |
 | 12:00 | Positioning. Do not blend in; find what is missing in your industry and own that gap. Three sources: the information you have, your philosophy on the subject, or your personality and unique take. | Positioning. |
 | 13:00 | His own example: everyone in his space emphasises virality and views, so he positions on long-term trust-built brands instead, deliberately contrasting himself. | Gap positioning worked. |
 | 14:30 | The other route to a fresh perspective is your story. What is different about your story, the challenges overcome, the turning points, the experiences that shaped your perspective. | Story as position. |
@@ -87,7 +89,8 @@ Every claim below carries a timestamp so it can be verified by scrubbing to it.
 - Alice in Wonderland: she asks which way to go, is asked where she is trying to end up, says she does not know, and is told "then either way will take you there." (t=05:45)
 - "If you don't actively shape your associations, your audience is going to do it for you." (t=08:20)
 - "Intentional is not a good or bad statement. Intentional doesn't mean right or good." (t=09:10)
-- "Awareness is not worth the trade. What are those people going to be aware of? They're going to be aware of you in light of that association." (t=12:00)
+- "Please be diligent about what you choose not to associate with. If you get a bad feeling in your gut, if you don't think that it's the right move, it's not worth the exposure." (t=11:19)
+- "Ultimately awareness is not worth the trade. What are those people going to be aware of? They're going to be aware of you in light of that association." (t=11:56)
 - Positioning: "You actually want to find what is missing in your industry and own that gap." Three sources: information, philosophy, personality. (t=12:20)
 - "Instead of Jeff Bezos talking about how resourceful he is, tell the story about how he used a door as his desk. Nothing will say resourceful more than telling that story." (t=16:20)
 - "If you ignore the praise, you can ignore the hate." (t=22:30)

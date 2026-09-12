@@ -18,6 +18,7 @@ overlap is real, so the division is fixed:
 
 | Question | Skill |
 |---|---|
+| Who am I and what am I known for? | `brand-architect` |
 | Who am I for and what should I make? | `algorithm-strategist` |
 | Which idea, validated how, with what proof? | `brand-idea-miner` |
 | What are the first three lines? | `hook-writer` |
@@ -33,6 +34,12 @@ Two places it reaches back:
   perceived effort. Generate there, score here, and fix the weak variable.
 - **Proof.** `brand-idea-miner` writes the proof plan. This skill runs that
   proof through the deaf and mute test before it reaches the page.
+
+`brand-architect` is the layer above all five. Its association sentence and
+brand story are what the 6Ps positioning and promise should be consistent
+with, so when the user has both, the brand definition wins over anything
+invented here. When they have neither and the copy keeps coming out generic,
+the problem is usually identity rather than wording, and it belongs there.
 
 ## Prerequisites
 

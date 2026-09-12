@@ -30,6 +30,13 @@ Once the structure is right, `copy-sharpener` sharpens the actual sentences
 (clear, concise, concrete, conversational, cadence) and writes the close.
 Structure here, wording there.
 
+`brand-architect` writes the brand's own story (catalyst, core truth,
+proof), which is a different job from this one: it is the spine the creator
+returns to for years, not a single piece structured to hold attention. Take
+the catalyst from there and shape it here when the creator wants to actually
+tell their origin story in a video, and use this skill's stakes and big
+question on it like any other raw material.
+
 ## Prerequisites
 
 - The raw material of the story (what actually happened, or the facts to convey), the target audience, and the medium and length (short video, YouTube script, email, post, talk). Ask for the audience if missing; stakes only work when they are personally relevant to that reader.

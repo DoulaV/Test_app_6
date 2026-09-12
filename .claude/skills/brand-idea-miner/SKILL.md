@@ -25,6 +25,13 @@ the chosen idea into finished words. It also supplies the empathy map and the
 verbatim-harvest protocol when the avatar needs more depth than a one-line
 statement.
 
+`brand-architect` sits above both. Its association sentence and refusal list
+filter the mined ideas before they are developed: an idea that scores well as
+an outlier but reinforces an association the creator has refused is a bad
+idea, whatever the numbers say. When the user has no clear identity yet, the
+collision generator will produce ideas that belong to nobody, so run
+`brand-architect` first.
+
 ## Prerequisites
 
 - The niche, the one specific viewer (from algorithm-strategist's avatar statement when it exists), the platform, and either a list of accounts the viewer already watches or permission to build one. Access to a research tool such as Sandcastles is optional; the manual path is documented.

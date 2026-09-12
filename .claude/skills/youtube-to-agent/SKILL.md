@@ -113,6 +113,17 @@ available. Gemini is a witness, not an oracle: treat its output as a second
 transcript to be reconciled with the frames, and mark anything only Gemini
 reports as "Gemini only".
 
+**Length limit.** Gemini caps the request at 1,048,576 input tokens, and video
+burns roughly 250 to 300 tokens per second, so Path C stops working somewhere
+around three to four hours of runtime. A 6h21m course returned HTTP 400
+INVALID_ARGUMENT with the token count in the message, and no retry or model
+change fixes it. There is no chunking support in `gemini_watch.py`. When a
+video is over about three hours, either skip Path C and go straight to Path D,
+or run Path C on the one section you actually need by passing a clipped copy
+of the video. A captions-only analysis for a long video is acceptable; say so
+in the analysis and mark every visual claim as unavailable rather than
+inferred.
+
 ### Path D: YouTube URL, no plugin, with or without a Gemini key
 
 ```bash

@@ -1,12 +1,14 @@
-# Producing Instagram Reels in Egyptian Arabic with the three Kallaway skills
+# Producing Instagram Reels in Egyptian Arabic with the six skills
 
 This is the working guide for going from "I need ideas" to a finished
-Egyptian Arabic Reel script using the five skills in this repo. They were
-built by `youtube-to-agent` from five Kallaway videos and one Jay Yang
-copywriting course, and they run in a fixed order:
+Egyptian Arabic Reel script using the six skills in this repo. They were
+built by `youtube-to-agent` from five Kallaway videos, one Jay Yang
+copywriting course and one Caleb Ralston personal-brand course, and they run
+in a fixed order:
 
 | Order | Skill | Decides | Source video |
 |---|---|---|---|
+| 0 | `brand-architect` | Who you are, what you are known for, what you refuse | How to Build a Personal Brand (Full Course) |
 | 1 | `algorithm-strategist` | What to make, for whom, with what stance | How Social Media Algorithms Actually Work |
 | 2 | `brand-idea-miner` | Which validated idea, remixed how, with what proof | The Power of Suggestion + Idea Mining (two videos) |
 | 3 | `hook-writer` | The first three lines and the on-screen text | How to Create Irresistible Hooks |
@@ -17,6 +19,32 @@ You do not need to name the skills. Claude Code triggers them from the
 request. Naming them is fine when you want to force the order.
 
 ## Part 1: One-time setup (do this once)
+
+### Fix who you are (brand-architect)
+
+Do this before the avatar, because the avatar is derived from it. Ask Claude:
+
+> Using brand-architect. I post [what] in Egyptian Arabic. I have [N]
+> followers. My best video did [N] views and the comments said [paste 5 to 10
+> real comments]. What I eventually want out of this is [outcome]. Audit what
+> my brand already is, then define it.
+
+You get back: one association sentence, the Brand Journey table, the two
+association lists (kept and refused), your position, the brand story in three
+parts, the pillar split, and the expansion path. Save all of it in one note.
+Everything below pastes from that note.
+
+Two parts of it you will use weekly. The **refusal list** answers every
+collaboration, sponsorship and podcast invitation without asking again. The
+**pillar split** tells you how much of your output may go off the core topic,
+which for most accounts should start at zero and rise only once reach is
+reliable. Read "The off-band budget" in the skill for the exact percentages.
+
+Egyptian Arabic note: the skill's "share your failures" advice is written for
+an audience that reads confession as candour. Where your audience would read
+it as complaint, buy the same trust with specificity instead: the exact
+number, the exact month, the decision that cost you something. The skill has
+a section on this ("Building a brand outside English").
 
 ### Fix the avatar and topic band
 
@@ -201,6 +229,9 @@ scroll at night feeling guilty".
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | Views stuck in the low hundreds after a good run | An off-band video muddied the fit score | Audit with algorithm-strategist; run several same-band videos |
+| Big views, very few new followers | Nothing tells the viewer there is more of this; the association is stranded | brand-architect audit; the drift shape is *stranded* |
+| A large audience that does not trust or buy | One thing in common only, no second interest, no brand story | brand-architect: spend the off-band budget, and publish the catalyst |
+| Unsure whether to accept a collab or sponsorship | No refusal list | brand-architect, step 4 |
 | People leave at 2 to 3 seconds | Hook has no stop line, or on-screen text missing on frame zero | hook-writer critique mode |
 | People leave in the middle | A resolution with dead air after it, or a vague teaser | story-loop-writer audit mode |
 | Script sounds translated | Voice note missing or too thin | Add specific phrase swaps and a persona to the voice note |
@@ -212,5 +243,7 @@ scroll at night feeling guilty".
 Any new tutorial can become another skill with `youtube-to-agent`: share the
 link and say "turn this into a skill and cross-link it with the others".
 Candidates that would slot into this pipeline: a video on editing pace and
-cuts for Reels, one on caption-free visual storytelling, and one on
-Egyptian Arabic copywriting register.
+cuts for Reels, one on caption-free visual storytelling, one on Egyptian
+Arabic copywriting register, and a production-operations skill covering
+cadence, the waterfall distribution model (one long piece becomes ten), and
+batching, which is the largest remaining gap in this system.

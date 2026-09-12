@@ -29,6 +29,14 @@ five obsession elements.
 `copy-sharpener` writes and sharpens the words once this skill has fixed the
 avatar, including the call to action that converts a viewer into a follower.
 
+`brand-architect` sits above this skill. It answers the question this one
+assumes has been answered already: who the creator is and what they want to
+be known for. Run it first when the user has no avatar, no point of view, or
+an account whose posts do not add up to anything. It hands down the core
+topic (which becomes the band), the association sentence, and a refusal list
+that kills ideas before they are scored here. It also holds the one rule
+that qualifies this skill's advice: see "The off-band budget" below.
+
 ## Prerequisites
 
 - Who the creator wants to reach (or enough about their business to infer it), the platform, and a list of recent or planned video topics with rough performance if available. Ask for the audience if missing; every recommendation hangs on the avatar.
@@ -37,7 +45,7 @@ avatar, including the call to action that converts a viewer into a follower.
 
 1. **Explain performance through the sampling model before giving advice.** On upload the platform fingerprints the video (visuals, transcript, metadata), maps its topic, and computes a fit score for who will like it. It shows the video to about 200 people, mostly non-followers, then boosts by roughly 10x per round on positive data, resamples another 200 on neutral data, or stops on negative data. A flop or '200 view jail' means the first sample returned bad data, so every diagnosis asks two questions: did it reach the wrong 200 (fit score problem) or did the right 200 not engage (content problem)? Present the numbers as a mental model, not platform constants. (see source-notes: t=01:39, t=02:47, t=03:28, t=04:30)
 2. **Define one audience avatar and a narrow topic band, and write them down as 'X topic for Y avatar'.** The highest-leverage move is audience matching: after a few similar videos the algorithm learns 'this channel talks about X for Y' and reuses the sample groups that worked. Mixed topics (tech, then health, then politics) produce a blended fit score and weak sample data, so the next video flops regardless of quality. (see source-notes: t=06:35, t=07:00, t=07:45, t=08:30)
-3. **Audit the recent and planned videos for consistency against that avatar and band, and flag off-avatar ideas even when they look viral.** One viral hit to the wrong audience poisons the next several videos' sample data because it confuses the fit score. Beginners spray and pray; discipline in topic and audience selection is the difference. (see source-notes: t=08:45, t=09:00)
+3. **Audit the recent and planned videos for consistency against that avatar and band, and flag off-avatar ideas even when they look viral.** One viral hit to the wrong audience poisons the next several videos' sample data because it confuses the fit score. Beginners spray and pray; discipline in topic and audience selection is the difference. This is a budget rather than a ban once the account has reach to spare; see "The off-band budget" below before telling an established creator to drop an off-band idea entirely. (see source-notes: t=08:45, t=09:00)
 4. **Score each idea against the four engagement attributes before it is made.** Sample data is judged on average watch time and completion, engagement rate (likes, comments, shares, saves, reposts over views), and watch time session share. Four content attributes raise all three: the topic solves a real problem the avatar has; the information is non-obvious and tactically implementable; the viewer can absorb it; there is a short distance between the advice and the result. In plain words: a real pain, something useful, said understandably, applicable on their own. The same four attributes turn viewers into buyers. (see source-notes: t=09:30, t=10:50, t=11:30, t=12:00, t=12:25)
 5. **Pick topics from evidence: find the outlier videos in the niche, note their topic, hook, and storytelling shape, and remix rather than guess.** Few creators use data to choose topics. Studying what already over-performs for the same avatar nearly guarantees relevance. The presenter uses a tool (Sandcastles) for this; the manual version is a list of ten competitor accounts and their top posts by views relative to their average. (see source-notes: t=12:40, t=13:05, t=13:25)
 6. **For each recommended video, propose an honest stance that will draw comments: pick a side, prefer the contrarian side when you actually hold it, amplify the framing, anchor to a cult-loved brand, person, or idea, and aim for a real emotion.** People comment when they disagree or feel strongly. Hedged takes get silence. 'This pasta is better than every mom-and-pop pasta shop' draws more discussion than 'this is the best way to cook pasta'; a stance on Nike draws more than a stance on shoes. Comments are engagement data that feeds the boost. (see source-notes: t=13:50, t=14:10, t=14:40, t=15:05, t=15:20)
@@ -132,6 +140,46 @@ answer these with the user:
 
 Any other audience the creator cares about becomes a separate account later,
 not a second lane on this one.
+
+## The off-band budget (not shown in the video)
+
+This skill says stay on band, and the source is emphatic: even a viral
+off-avatar hit costs the next several videos. That is true of the
+distribution system and it is not the whole picture.
+
+`brand-architect`, built from a different source, says the opposite: spend
+roughly a fifth of your output on your genuine other interests, because an
+account that only ever talks about one thing bores the audience and bores
+the creator, and every extra thing in common is another way a viewer becomes
+a follower.
+
+Both are right about different systems. This one optimises distribution,
+which does punish topic drift. That one optimises the relationship, because
+a perfectly on-band account is a topic feed, and a topic feed caps at useful
+without ever becoming loyal.
+
+The resolution, which neither source states alone: **off-band content is not
+free and it is not forbidden, it is priced.** It costs reach on the posts
+that follow it and it buys depth of attachment. So it is a budget, not a
+ban:
+
+- No established fit score, or fewer than about ten posts: spend nothing.
+- Reach inconsistent, or trying to break off a floor: 0 to 5%.
+- Reliable reach but weak follow rate, few comments, or an audience that
+  watches and leaves: 15 to 20%, because the reach exists and is not
+  converting.
+- Reliable reach and strong loyalty: 20% as maintenance.
+
+Three conditions on anything spent: it has to be genuinely the creator's own
+interest rather than a topic chosen because it performs, it should connect
+back to the core association wherever that is honest (usually one sentence),
+and it should go out after a post that did well rather than after a flop,
+since it spends reach instead of earning it.
+
+When diagnosing a flop, this still counts as a fit-score problem. The
+difference is the verdict: a budgeted off-band post that cost reach did what
+it was supposed to do, and the question becomes whether the account could
+afford it, not whether it was a mistake.
 
 ## Honesty boundary for comment tactics (not shown in the video)
 

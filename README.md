@@ -19,6 +19,11 @@ The six work in sequence: brand-architect fixes who the creator is and what they
 
 One rule crosses two of them and is resolved in both: off-band content is not free and it is not forbidden, it is priced. It costs reach on the following posts and buys depth of attachment. See "The off-band budget" in `brand-architect` and in `algorithm-strategist`.
 
+Working setup:
+
+- `docs/project-instructions.md`: paste-ready instructions for a claude.ai Project, so the skills run against a fixed voice, audience and brand without re-pasting context every time.
+- `dist/claude-ai/`: the six content skills zipped for upload to claude.ai as custom Skills, with descriptions cut to the 200 character limit. Regenerate with `python3 dist/claude-ai/pack.py`.
+
 Core skill:
 
 - `.claude/skills/youtube-to-agent/`: turn any YouTube tutorial or shared video into a working Claude Code skill. Share a video URL or file and ask Claude to "turn this into a skill". Run `python3 .claude/skills/youtube-to-agent/scripts/setup.py` to see which of the three systems (the `/watch` plugin, a Gemini API key, the analysis framework) are ready.

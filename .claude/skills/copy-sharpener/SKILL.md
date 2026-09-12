@@ -184,23 +184,27 @@ is not a tiebreaker; the shorter one wins only if nothing was lost.
 
 ## Worked example
 
-Before, from a real bio: "Content creator | Storyteller | Helping brands
-tell better stories | DM for collabs."
+Before, a real conference talk description: "In this session we will explore
+best practices and actionable insights for leveraging modern tooling to
+optimise your engineering workflows and unlock team productivity."
 
-- Clear: fails. Three job titles and no statement of what happens.
-- Concise: passes on length, fails on value. Nine of the eleven words do no work.
-- Concrete: fails. Nothing is visualizable, and "better stories" cannot be pictured.
-- Conversational: fails. Nobody introduces themselves in pipes.
-- Cadence: fails. Four fragments of identical weight.
-- Proof: none. Deaf and mute test finds nothing to point at.
-- CTA: "DM for collabs" names no one and no reason.
+- Clear: fails. After reading it you cannot say what the talk is about.
+- Concise: fails. Twenty-four words, and "best practices", "actionable
+  insights", "leverage", "optimise" and "unlock" carry no information.
+- Concrete: fails. Nothing can be pictured. No tool, no workflow, no team.
+- Conversational: fails. Nobody describes their own talk this way out loud.
+- Cadence: fails. One long clause with no break in it.
+- Proof: none. The deaf and mute test finds nothing to point at.
+- Priority and CTA: absent. There is no reason to attend rather than read the
+  slides later.
 
-After: "I make short films about the things Egyptian men do not say out loud.
-One of them has 450,000 views. New one every Thursday."
+After: "We deleted 60% of our CI pipeline and builds got faster. I will show
+you the four jobs we cut, why we were wrong about two of them, and how to
+find yours. Bring your own pipeline; we will look at one live at the end."
 
-Clear, concrete, spoken, varied in length, proof that can be pointed at, and
-a close that tells the reader exactly when to come back. The numbers in it
-are placeholders until the user confirms them.
+Short, medium, long. Every claim points at a number or an action. The reader
+can picture the thing, knows who it is for, and knows what happens if they
+turn up. The percentage is a placeholder until the speaker confirms it.
 
 ## References
 

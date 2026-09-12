@@ -1,0 +1,23 @@
+{
+  "skill_name": "brand-architect",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I post cinematic short films in egyptian arabic about men not being able to talk about their feelings. 13k followers, one video did 450k views. I have no idea what I'm actually building, people watch and leave. what should I be known for and how do I decide what to post?",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "a supplement company wants to sponsor me and a fairly famous business guru wants me on his podcast. the guru has a bad reputation for selling courses. do I take either? how do I decide things like this going forward without asking every time?",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I've been posting woodworking for 2 years and I'm bored of it. I want to start talking about running a small business, investing, and my dog. my engagement is steady but flat. what do I do?",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": []
+    }
+  ]
+}

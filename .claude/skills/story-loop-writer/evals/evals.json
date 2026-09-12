@@ -1,0 +1,50 @@
+{
+  "skill_name": "story-loop-writer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm a freelance web designer and I want to post a linkedin story about the time a client ghosted me for 3 weeks then came back with a bigger project. here's what happened: sent the proposal march 2, no reply, followed up twice, nothing, then march 24 she emails saying her company got acquired and now she needs the whole site redone with 5x the budget. how do I tell this so people actually read to the end?",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": [],
+      "assertions": [
+        "The delivered story or rewrite labels the four moves (stakes, big question, head fake, re-hook) explicitly",
+        "Stakes appear before the action: a person, something at risk, and a time pressure are all present in the opening lines",
+        "The big question is specific enough to predict against, not a vague teaser like 'something crazy happened'",
+        "Each head fake is checked for hindsight logic: the answer names the predicted outcome, the delivered outcome, and a clue planted earlier",
+        "Resolutions are followed by a re-hook in the same sentence or the next, with no dead-air transition",
+        "States the assumed audience and what they have at risk",
+        "Uses only the facts the user gave; any added detail is marked as a placeholder"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Here's the intro to my YouTube video on how I fixed my sleep: 'So I used to have really bad sleep. I tried a lot of things. Eventually I found out that the problem was my caffeine timing. Once I moved my last coffee to before noon everything got better. In this video I'll go over what I learned.' People drop off around 20 seconds in. Why, and can you fix it?",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": [],
+      "assertions": [
+        "The delivered story or rewrite labels the four moves (stakes, big question, head fake, re-hook) explicitly",
+        "Stakes appear before the action: a person, something at risk, and a time pressure are all present in the opening lines",
+        "The big question is specific enough to predict against, not a vague teaser like 'something crazy happened'",
+        "Each head fake is checked for hindsight logic: the answer names the predicted outcome, the delivered outcome, and a clue planted earlier",
+        "Resolutions are followed by a re-hook in the same sentence or the next, with no dead-air transition",
+        "States the assumed audience and what they have at risk",
+        "Audits the original line by line, naming which loop move each line has and the specific problem (no stakes, vague teaser, reveal without prediction, dead air)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "write me a 45 second script for a reel about how our bakery almost closed in 2023 and now has a line out the door. audience is other small business owners. facts: rent went up 40%, we had 6 weeks of cash left, we started doing a 6am 'first batch' live on instagram as a last resort, within a month the morning line started, now we do 3x the revenue",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": [],
+      "assertions": [
+        "The delivered story or rewrite labels the four moves (stakes, big question, head fake, re-hook) explicitly",
+        "Stakes appear before the action: a person, something at risk, and a time pressure are all present in the opening lines",
+        "The big question is specific enough to predict against, not a vague teaser like 'something crazy happened'",
+        "Each head fake is checked for hindsight logic: the answer names the predicted outcome, the delivered outcome, and a clue planted earlier",
+        "Resolutions are followed by a re-hook in the same sentence or the next, with no dead-air transition",
+        "States the assumed audience and what they have at risk",
+        "Script length fits about 45 seconds spoken (roughly 100 to 130 words of dialogue)"
+      ]
+    }
+  ]
+}

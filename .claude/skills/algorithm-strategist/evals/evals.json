@@ -1,0 +1,50 @@
+{
+  "skill_name": "algorithm-strategist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "my last 8 reels got like 300 views each and before that I had a few at 20k+. I post about home workouts mostly but the two 20k ones were a vlog of my trip to Turkey and a rant about gym prices. posting at 7pm like everyone says. what am I doing wrong? should I change posting time?",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": [],
+      "assertions": [
+        "Explains the outcome or recommendation through the sampling model (first ~200 mostly non-follower viewers, then boost, retry, or stop)",
+        "States an avatar and topic band in the form '<topic> for <avatar>'",
+        "Scores or checks ideas against the four engagement attributes (relevant, non-obvious and implementable, absorbable, short distance to result)",
+        "Says which video to make or post first and gives a reason tied to the avatar or the attributes",
+        "Proposes at least one honest stance or framing intended to draw comments",
+        "Identifies the Turkey vlog and gym-price rant as off-avatar videos that muddied the fit score for the following reels",
+        "Says posting time does not matter and redirects to topic consistency"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I'm a dentist starting an instagram for my clinic. here are the video ideas I have: 1) tour of the clinic, 2) why you should floss, 3) my morning routine, 4) reacting to a viral tiktok about charcoal toothpaste, 5) how much dentists actually earn, 6) the one mistake parents make with kids' teeth, 7) my dog at the clinic. which should I make and in what order?",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": [],
+      "assertions": [
+        "Explains the outcome or recommendation through the sampling model (first ~200 mostly non-follower viewers, then boost, retry, or stop)",
+        "States an avatar and topic band in the form '<topic> for <avatar>'",
+        "Scores or checks ideas against the four engagement attributes (relevant, non-obvious and implementable, absorbable, short distance to result)",
+        "Says which video to make or post first and gives a reason tied to the avatar or the attributes",
+        "Proposes at least one honest stance or framing intended to draw comments",
+        "Produces a consistency table or equivalent that marks the morning routine, dentist earnings, and dog videos as off-avatar or weak",
+        "Recommends a run of same-band videos for a new account rather than variety"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "give me 5 video ideas with strong stances for a channel about personal finance for egyptian 20-somethings, and tell me which one to post first and why",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": [],
+      "assertions": [
+        "Explains the outcome or recommendation through the sampling model (first ~200 mostly non-follower viewers, then boost, retry, or stop)",
+        "States an avatar and topic band in the form '<topic> for <avatar>'",
+        "Scores or checks ideas against the four engagement attributes (relevant, non-obvious and implementable, absorbable, short distance to result)",
+        "Says which video to make or post first and gives a reason tied to the avatar or the attributes",
+        "Proposes at least one honest stance or framing intended to draw comments",
+        "Delivers exactly 5 ideas, each with a stance that is opinion or comparison rather than a factual allegation about a real person or brand",
+        "Ideas are specific to the stated avatar (Egyptian 20-somethings) rather than generic personal finance"
+      ]
+    }
+  ]
+}

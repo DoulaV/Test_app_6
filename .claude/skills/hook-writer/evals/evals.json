@@ -1,0 +1,50 @@
+{
+  "skill_name": "hook-writer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I run a small bookkeeping firm and I'm trying to do short TikToks for other small business owners. this week's topic is why you shouldn't mix personal and business expenses. can you write me a few hooks? my last videos die at like 2 seconds",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": [],
+      "assertions": [
+        "Each candidate hook has an explicit three-part structure: a context lean, a contrast (stop) line, and a reversal (snapback)",
+        "Provides 3 to 5 word on-screen text for the opening frame",
+        "Names a first hit of value the viewer gets right after the hook",
+        "Hook sentences are short (most under about 12 words)",
+        "Recommends which candidate to use and gives a reason grounded in believability of the payoff or size of the reversal",
+        "Leads with a benefit or pain point of small business owners rather than with the topic name (known-desire framing)",
+        "Respects the roughly 4 second short-form budget for the spoken hook"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Here's the opening of my YouTube video script about learning Rust as a Python developer: 'Hey everyone, welcome back to the channel. Today I want to talk about Rust. Rust is a systems programming language that has been growing in popularity. I've been learning it for a few months and wanted to share my experience.' Can you tell me why this isn't working and fix it?",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": [],
+      "assertions": [
+        "Each candidate hook has an explicit three-part structure: a context lean, a contrast (stop) line, and a reversal (snapback)",
+        "Provides 3 to 5 word on-screen text for the opening frame",
+        "Names a first hit of value the viewer gets right after the hook",
+        "Hook sentences are short (most under about 12 words)",
+        "Recommends which candidate to use and gives a reason grounded in believability of the payoff or size of the reversal",
+        "Diagnoses the original by mapping its lines to lean, stop, and snap and naming which parts are missing",
+        "Uses common ground with Python developers (cult hopping or shared pain) in the rewritten lean"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "need 5 hook options for an instagram reel about a new pour-over coffee technique, audience is home coffee nerds, also give me the text overlay for the first frame",
+      "expected_output": "Completes the task following the procedure in SKILL.md.",
+      "files": [],
+      "assertions": [
+        "Each candidate hook has an explicit three-part structure: a context lean, a contrast (stop) line, and a reversal (snapback)",
+        "Provides 3 to 5 word on-screen text for the opening frame",
+        "Names a first hit of value the viewer gets right after the hook",
+        "Hook sentences are short (most under about 12 words)",
+        "Recommends which candidate to use and gives a reason grounded in believability of the payoff or size of the reversal",
+        "Delivers exactly 5 hook options as requested",
+        "Text overlay avoids an obscure technique name and uses plain descriptive words"
+      ]
+    }
+  ]
+}

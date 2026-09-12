@@ -5,19 +5,43 @@
       "id": 1,
       "prompt": "rewrite my instagram bio, it's currently 'Content creator | Storyteller | Helping brands tell better stories | DM for collabs' and it gets me nothing. i make cinematic short films about mental health in egyptian arabic, 13k followers",
       "expected_output": "Completes the task following the procedure in SKILL.md.",
-      "files": []
+      "files": [],
+      "assertions": [
+        "Names the failing test by name (clear, concise, concrete, conversational, or cadence) rather than giving vague feedback",
+        "Delivers a clean, ready-to-use rewrite with no annotation inside the copy itself",
+        "Replaces at least one abstract claim with something concrete and visualizable",
+        "Marks any invented number or fact as a placeholder rather than asserting it",
+        "The close names who it is for and one single action, not several",
+        "Uses the 13k followers or the work itself as proof that could survive the deaf and mute test, rather than adjectives"
+      ]
     },
     {
       "id": 2,
       "prompt": "here's the last line of my reel script: 'so yeah that's basically it, hope you found this useful, follow for more content like this.' my videos get 400k views but barely any comments or follows. fix the ending.",
       "expected_output": "Completes the task following the procedure in SKILL.md.",
-      "files": []
+      "files": [],
+      "assertions": [
+        "Names the failing test by name (clear, concise, concrete, conversational, or cadence) rather than giving vague feedback",
+        "Delivers a clean, ready-to-use rewrite with no annotation inside the copy itself",
+        "Replaces at least one abstract claim with something concrete and visualizable",
+        "Marks any invented number or fact as a placeholder rather than asserting it",
+        "The close names who it is for and one single action, not several",
+        "Recognises there is nothing being sold and softens the close to a question or a named next piece rather than bolting on a sales CTA"
+      ]
     },
     {
       "id": 3,
       "prompt": "I run a small accounting practice in Alexandria for restaurant owners. write me the copy for my landing page hero section. our thing is we do the books weekly instead of monthly so owners catch problems fast. we've kept 3 restaurants from closing last year.",
       "expected_output": "Completes the task following the procedure in SKILL.md.",
-      "files": []
+      "files": [],
+      "assertions": [
+        "Names the failing test by name (clear, concise, concrete, conversational, or cadence) rather than giving vague feedback",
+        "Delivers a clean, ready-to-use rewrite with no annotation inside the copy itself",
+        "Replaces at least one abstract claim with something concrete and visualizable",
+        "Marks any invented number or fact as a placeholder rather than asserting it",
+        "The close names who it is for and one single action, not several",
+        "Turns the weekly-books feature into an outcome the owner wants via the So What ladder, and uses the 3 restaurants as pointable proof"
+      ]
     }
   ]
 }

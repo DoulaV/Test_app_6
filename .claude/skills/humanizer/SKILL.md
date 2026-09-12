@@ -345,6 +345,11 @@ so route it through §B.
 
 ## Output
 
+**This section governs, and so does the workflow above.** Both vendored files
+carry their own output instructions, and the English one differs (it asks for
+an intermediate draft). Ignore both. The reference files are the authority for
+what each pattern is and how to fix it, and for nothing else.
+
 **Pasted text, the default.** Return three things: the patterns you found, the
 rewrite, and a short note on anything still unresolved or any detail you need
 from the writer. For Arabic, add the rubric score.
@@ -408,9 +413,11 @@ doubt, make it shorter, make it more direct, and add يعني.
 ## References
 
 - `references/english-patterns.md`: blader/humanizer v3.0.0, unmodified. The
-  authority for §B, with a before and after for every pattern.
+  authority for §B pattern definitions, with a before and after for every one.
+  Its own workflow and output sections are superseded by this file.
 - `references/egyptian-arabic-patterns.md`: OthmanAdi/humanizer-semitic's
-  humanizer-ar-egt v1.0.0, unmodified. The authority for §C, with examples,
-  the full workflow and the rubric tables.
+  humanizer-ar-egt v1.0.0, unmodified. The authority for §C pattern
+  definitions, with examples and the full rubric tables. Its own workflow,
+  output and register sections are superseded by this file.
 - `references/merge.md`: what each source contributed, the six conflicts
   between them, and how each was settled. Read it before editing this file.

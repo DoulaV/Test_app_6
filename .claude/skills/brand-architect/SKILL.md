@@ -76,6 +76,7 @@ off-band budget, in step 8 and in "The off-band budget" below.
 - When the user asks what to post about, what their niche is, or why nothing is working, and has never written down a desired outcome: stop and run the Brand Journey backwards first; every downstream answer changes with the outcome (see source-notes: t=04:00, t=05:30)
 - When the user already has an account with posts: audit before designing: read the posts and comments, write what a stranger would say it is about next to what the creator says, and work from the gap (see source-notes: t=03:40, t=22:00)
 - When the user asks whether to accept a collaboration, podcast, sponsorship, guest spot or shared platform: check it against the refusal list and ask what association it transfers in both directions; if it conflicts, decline, because awareness is not worth the trade (see source-notes: t=10:00, t=11:56)
+- When the user names a product, a service or a revenue goal: check whether the people it serves are the same people the content attracts; if not, run the two-audience section before any other advice, because narrowing to one avatar will send them the wrong way (see source-notes: t=04:00)
 - When the user wants to broaden into a second topic: ask whether they are known for the first one yet with consistent positive engagement; if not, hold, and if yes, find the layer that connects the two rather than leaping (see source-notes: t=37:00, t=43:20)
 - When the user is new, has no established reach, or is trying to break a plateau: put the split near 100/0 and say why: the 20% is paid for with reach they do not have yet (see source-notes: t=48:00)
 - When the user has reliable reach but weak follower conversion or weak loyalty: spend the full 20% on genuine other interests, and say which ones, because loyalty comes from having more than one thing in common (see source-notes: t=50:00)
@@ -210,6 +211,56 @@ landing, and it usually beats the one the creator intended, so treat it as
 the strongest input to the Core Truth. The recurring objection is the
 friction, and it belongs inside future content before it is raised.
 
+## When the audience and the buyer are different people (not shown in the video)
+
+The course assumes one audience: the people you attract are the people who
+eventually pay you. That is true for a business educator and false for a lot
+of creators, and when it is false it is the single most important fact about
+the brand.
+
+The symptom is a large engaged audience with no revenue path, or a product
+that nobody in the audience wants. A filmmaker whose films move a general
+audience wants to sell presets and courses to other filmmakers. A musician
+with listeners wants to sell sample packs to producers. A chef with viewers
+wants to sell knives to cooks. In each case the reach comes from one crowd and
+the money from another.
+
+**Diagnose it by writing two avatars, not one.** The Attracted, meaning who
+actually watches and why. The Buyer, meaning who would pay and for what. If
+they are the same person, ignore this section. If they are not, everything
+that follows applies and the ordinary advice about narrowing to one avatar
+will quietly send the creator in the wrong direction.
+
+**Find the bridge before changing anything.** The bridge is one artifact both
+audiences value from different sides, and it is almost always the work itself
+seen from two angles: the front is the experience, the back is the method. The
+Attracted want the front. The Buyer wants the back. It is the same asset, so
+it costs one production rather than two.
+
+Four rules follow, and all four are easy to get wrong:
+
+1. **Do not split into two accounts before the bridge is proven.** Two
+   accounts means two fingerprints, two posting cadences and half the reach
+   each, and the credibility that sells the product lives in the front-facing
+   work. Splitting severs the product from its proof.
+2. **Do not make Buyer content before the Attracted audience is reliable.**
+   The method is only worth paying for because the work is good, so the work
+   has to land first. This is the credibility ladder from the source, applied
+   to two audiences instead of one topic.
+3. **Make the method visible inside the main work before making it a separate
+   post.** A frame from the timeline, a before and after in the caption, the
+   setup in a story. This seeds the Buyer association at almost no cost in
+   reach, because it is not a topic change. Standalone method content comes
+   later, on a trigger.
+4. **The first product is the direct artifact of what is already praised.**
+   Whatever the comments keep asking about is what to sell first, in its
+   lowest-effort form. Not the most ambitious product, not a course. The thing
+   that already exists as a byproduct of the work.
+
+If Buyer content consistently underperforms once it starts, the bridge is
+wrong rather than the product. Go back and find the angle on the work that
+both audiences actually value, instead of pushing the product harder.
+
 ## The off-band budget (not shown in the video)
 
 Step 8 states the resolution. This is the table for applying it.
@@ -329,6 +380,7 @@ These are needed to do the job but were not shown. Verify them.
 - Sections three and four of the course (hiring a team, monetisation) are out of scope here. (not shown in the video)
 - How to audit an existing accidental brand. The course is framed as building from zero; the audit step in this skill is added, not taught. (not shown in the video)
 - Whether the 80/20 split applies to an account with no established reach. The rule assumes an audience that can already find you. The near-zero starting point is an inference. (not shown in the video)
+- What to do when the audience the content attracts and the audience that would buy are different people. The course assumes they are the same, which is true for a business educator and false for many creators. Section added above. (not shown in the video)
 - Non-English and non-Western brand building, where the association set and the norms around public vulnerability differ. Nothing in the source addresses it; adapt the vulnerability guidance to what the creator's own audience treats as honest rather than as complaint. (not shown in the video)
 - How long each stage takes. The course gives no timeline for when credibility is earned or when expansion is safe; use engagement consistency as the trigger instead of elapsed time. (not shown in the video)
 

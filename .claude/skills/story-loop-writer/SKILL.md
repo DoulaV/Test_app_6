@@ -26,6 +26,10 @@ in this skill should be the pain that skill identified for the avatar.
 level to pick the structure: breakdown, before-and-after transformation, or
 step-by-step with results.
 
+Once the structure is right, `copy-sharpener` sharpens the actual sentences
+(clear, concise, concrete, conversational, cadence) and writes the close.
+Structure here, wording there.
+
 ## Prerequisites
 
 - The raw material of the story (what actually happened, or the facts to convey), the target audience, and the medium and length (short video, YouTube script, email, post, talk). Ask for the audience if missing; stakes only work when they are personally relevant to that reader.

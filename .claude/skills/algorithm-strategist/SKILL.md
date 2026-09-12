@@ -26,6 +26,9 @@ their own ideas to make, hand the avatar and band to `brand-idea-miner`,
 which mines outliers in the niche and shapes them into ideas that pass the
 five obsession elements.
 
+`copy-sharpener` writes and sharpens the words once this skill has fixed the
+avatar, including the call to action that converts a viewer into a follower.
+
 ## Prerequisites
 
 - Who the creator wants to reach (or enough about their business to infer it), the platform, and a list of recent or planned video topics with rough performance if available. Ask for the audience if missing; every recommendation hangs on the avatar.

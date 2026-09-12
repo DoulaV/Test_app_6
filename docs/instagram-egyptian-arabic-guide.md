@@ -1,9 +1,9 @@
 # Producing Instagram Reels in Egyptian Arabic with the three Kallaway skills
 
 This is the working guide for going from "I need ideas" to a finished
-Egyptian Arabic Reel script using the four skills in this repo. They were
-built by `youtube-to-agent` from five Kallaway videos and they run in a
-fixed order:
+Egyptian Arabic Reel script using the five skills in this repo. They were
+built by `youtube-to-agent` from five Kallaway videos and one Jay Yang
+copywriting course, and they run in a fixed order:
 
 | Order | Skill | Decides | Source video |
 |---|---|---|---|
@@ -11,6 +11,7 @@ fixed order:
 | 2 | `brand-idea-miner` | Which validated idea, remixed how, with what proof | The Power of Suggestion + Idea Mining (two videos) |
 | 3 | `hook-writer` | The first three lines and the on-screen text | How to Create Irresistible Hooks |
 | 4 | `story-loop-writer` | The body: stakes, big question, head fake, re-hook | The Neuroscience of Addictive Storytelling |
+| 5 | `copy-sharpener` | The actual words, the on-screen text, and the close | How To Write Words That Make People Buy |
 
 You do not need to name the skills. Claude Code triggers them from the
 request. Naming them is fine when you want to force the order.
@@ -127,6 +128,23 @@ Egyptian-specific checks on the result:
   to 115 Arabic words; a 30-second one 65 to 80.
 - Placeholders in square brackets are facts you did not supply. Replace or
   cut every one before recording; do not keep a detail that is not true.
+
+### Step 3b: Sharpen the words (copy-sharpener)
+
+Your on-screen Arabic text is the primary carrier, so it is worth a pass of
+its own:
+
+> Using copy-sharpener. Here is the full script: [paste]. Voice: [paste].
+> Line-edit the on-screen text against the five tests, keep the register
+> consistent (dialect, not Modern Standard), and write me a close.
+
+Arabic-specific notes it applies: Hemingway and the fifth-grade reading rule
+do not work here, so it uses the read-aloud and squint tests instead; cadence
+is judged on clause length rather than syllables; and mixing Modern Standard
+with dialect reads as a translation, so it holds one register throughout.
+
+For emotional pieces it will not bolt a sales close onto the ending. It
+softens to a single question, which is also what fixes a low comment count.
 
 ### Step 4: Assemble and check
 

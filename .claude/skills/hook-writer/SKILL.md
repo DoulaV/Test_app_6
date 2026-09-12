@@ -26,6 +26,10 @@ proof plan) before any hook is written; when the user has no idea yet, start
 there. Its collision (the outside-niche frame that makes the angle
 non-obvious) is usually the strongest lever for the lean.
 
+After the candidates exist, `copy-sharpener` scores them with benefit times
+relevance times credibility over perceived effort, and line-edits the
+winner's wording. Generate here, score there.
+
 ## Prerequisites
 
 - A topic, the target viewer, and the format (short-form vertical, YouTube long-form, or written) from the user. Ask for the target viewer if it is missing; the lean-in lever depends on it.

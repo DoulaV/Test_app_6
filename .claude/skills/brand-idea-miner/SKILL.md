@@ -20,6 +20,11 @@ seven legos map onto them: the hook lego is hook-writer's job, the story
 structure lego is story-loop-writer's, and this skill decides topic, angle,
 visual format, key visuals, and audio, plus the proof plan.
 
+`copy-sharpener` runs the proof plan through the deaf and mute test and turns
+the chosen idea into finished words. It also supplies the empathy map and the
+verbatim-harvest protocol when the avatar needs more depth than a one-line
+statement.
+
 ## Prerequisites
 
 - The niche, the one specific viewer (from algorithm-strategist's avatar statement when it exists), the platform, and either a list of accounts the viewer already watches or permission to build one. Access to a research tool such as Sandcastles is optional; the manual path is documented.

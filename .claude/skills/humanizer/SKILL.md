@@ -72,10 +72,18 @@ Every pattern below is one of three operations. Know which one you are doing.
 - **Cut.** Delete words that carry no claim. Always safe.
 - **Swap.** Replace a construction with an equivalent one. Changes nothing the
   text asserts. Always safe.
-- **Add.** Insert words that were not there. Allowed **only** from this closed
-  list, and only where the register calls for it: discourse particles, hedges,
-  terms of address, reader-directed questions, letter lengthening, laughter
-  markers. These carry tone, not content. Nothing else may be added.
+- **Add.** Insert words that were not there. Allowed **only** from the closed
+  list below, which carries tone and no content. Nothing else may be added,
+  ever. The list has two tiers and they behave differently:
+  - **Always allowed, density set by register: discourse particles and
+    hedges.** In Egyptian Arabic these are not decoration, they are how the
+    language marks discourse, and a text with none of them is machine-written
+    whatever it is for. A film character uses يعني. Sparse on the formal end,
+    heavy on the casual end, never zero.
+  - **Register-gated, and off entirely on the Dramatic rung: terms of address,
+    reader-directed questions, letter lengthening, laughter markers.** These
+    are a person performing to a reader. They do not belong in a line of film
+    dialogue unless the character would say them.
 
 Almost every English fix is a cut. Almost every Arabic fix is a swap. The adds
 are nearly all Arabic and nearly all register-gated.
@@ -113,21 +121,30 @@ Cairo's average.
 Without a sample, take the voice from the register. Both sources have a
 register scheme; this is the merged ladder, with one rung added.
 
-| Register | Examples | Arabic performative adds |
-|---|---|---|
-| Ultra casual | WhatsApp, DMs, TikTok comments | All of them, at full strength |
-| Casual | Posts, group chats, comments | Particles and questions yes, Arabizi no |
-| Informal professional | Work chat, LinkedIn in Masri | يعني fine, هههههه not, no lengthening |
-| Semi formal | Blogs, YouTube scripts, op-eds | Particles at natural junctions only |
-| **Dramatic** | Film dialogue, voiceover, monologue | **None** |
+| Register | Examples | Particles and hedges | Address, reader questions, lengthening, laughter, Arabizi |
+|---|---|---|---|
+| Ultra casual | WhatsApp, DMs, TikTok comments | Heavy | All of them, at full strength |
+| Casual | Posts, group chats, comments | Regular | Yes, but no Arabizi |
+| Informal professional | Work chat, LinkedIn in Masri | Restrained | Address terms only. No lengthening, no هههههه |
+| Semi formal | Blogs, YouTube scripts, op-eds | At natural junctions | Reader questions only, sparingly |
+| **Dramatic** | Film dialogue, voiceover, monologue | **Sparse, never zero** | **None** |
 
 The Dramatic rung is ours, not either source's. Neither covers written
 dialogue, where a character speaks and the writer is invisible. On a
 cinematic script the Egyptian grammar patterns apply in full and the
 performative additions are wrong: letter lengthening, laughter markers,
-Arabizi and reader-directed questions belong to a person chatting, not to a
-line of film dialogue. A character may of course say any of them if that is
-how the character talks, which is the writer's call and not an edit.
+Arabizi, terms of address and reader-directed questions belong to a person
+chatting, not to a line of film dialogue. A character may of course say any of
+them if that is how the character talks, which is the writer's call and not an
+edit you make unasked.
+
+**Particles are the exception and they are not performance.** يعني، بقى،
+خلاص، بس، طب mark discourse in Masri the way tense marks time, and a
+character who uses none of them does not sound restrained, they sound
+translated. Keep them sparse on this rung, two or three across a scene rather
+than one per line, and put them at real junctions: where the speaker sets
+something aside, or turns from a general thought to a personal one. Never
+strip them to zero.
 
 For English without a sample: blog posts, essays and personal writing keep the
 writer's opinions, uncertainty, humour and asides. Reference, technical and
@@ -381,7 +398,10 @@ start over.
 
 On the Dramatic rung, score Particles and Code-switching against what the
 character would say, not against Cairo chat defaults, and say so when you
-report the number.
+report the number. Code-switching in particular has no floor: when the right
+amount of English for this speaker in this scene is none, a text with no
+English scores full marks. Do not mark a line down for lacking something it
+should not have. Score the fit, not the quantity.
 
 There is no English rubric. The English source does not have one and inventing
 a score would imply a precision the pattern list does not have. For English,

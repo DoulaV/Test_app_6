@@ -126,6 +126,16 @@ chatting, not to a line of film dialogue.
 marked as ours rather than V2's. Its rule is that the grammar patterns apply
 in full and the performative additions do not.
 
+An eval run then caught this being drawn one category too wide. Discourse
+particles were grouped with the performance, so the Dramatic rung read as
+forbidding them, while the rubric still scored them and V2's closing line
+still said to add يعني. Particles are not performance. They mark discourse in
+Masri the way tense marks time, and a character using none of them sounds
+translated rather than restrained. The add list is now two tiers: particles
+and hedges are always allowed with the register setting only their density,
+and address terms, reader questions, lengthening, laughter and Arabizi are
+register-gated and off on Dramatic.
+
 ### 5. Writing samples. Only V1 has them.
 
 V1 lets a user-supplied writing sample override its own pattern list,

@@ -1,6 +1,14 @@
 ---
 name: hook-writer
-description: Write, rewrite, and critique scroll-stopping opening hooks for short-form and long-form video scripts (and other content) using Kallaway's three-step hook formula: context lean, scroll stop interjection, contrarian snapback, plus visual text, known-desire framing, cult hopping, speed to value, and staccato sentences. Use this whenever the user asks for a hook, an intro, an opening line, a cold open, a first three seconds, a title-card text, or says a video or post is not retaining viewers, even if they never say the word hook. Also use it to grade or fix an existing script opening.
+description: |
+  Write, rewrite, and critique scroll-stopping opening hooks for short-form
+  and long-form video scripts (and other content) using Kallaway's three-step
+  hook formula: context lean, scroll stop interjection, contrarian snapback,
+  plus visual text, known-desire framing, cult hopping, speed to value, and
+  staccato sentences. Use this whenever the user asks for a hook, an intro, an
+  opening line, a cold open, a first three seconds, a title-card text, or says
+  a video or post is not retaining viewers, even if they never say the word
+  hook. Also use it to grade or fix an existing script opening.
 ---
 
 # Hook Writer

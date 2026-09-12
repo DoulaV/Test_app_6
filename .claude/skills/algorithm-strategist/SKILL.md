@@ -1,6 +1,19 @@
 ---
 name: algorithm-strategist
-description: Plan and audit content strategy using Kallaway's model of how social algorithms distribute videos: digital fingerprint, fit score, a first sample of about 200 mostly non-follower viewers, then boost, retry, or stop. Covers choosing one audience avatar and a narrow topic band (audience matching), scoring video ideas against the four engagement attributes, diagnosing why a video flopped or got stuck at low views, and driving comments with honest stances. Use this whenever the user asks why their reels, shorts, TikToks, or videos are not getting views, mentions 200-view jail, a flop, low reach, the algorithm, shadowbans, posting times, hashtags, niching down, picking a niche or target audience, content pillars, a content calendar or strategy, or asks which video idea to make next, even if they never say the word algorithm. Also use it to review a list of past or planned videos for topic consistency.
+description: |
+  Plan and audit content strategy using Kallaway's model of how social
+  algorithms distribute videos: digital fingerprint, fit score, a first sample
+  of about 200 mostly non-follower viewers, then boost, retry, or stop. Covers
+  choosing one audience avatar and a narrow topic band (audience matching),
+  scoring video ideas against the four engagement attributes, diagnosing why a
+  video flopped or got stuck at low views, and driving comments with honest
+  stances. Use this whenever the user asks why their reels, shorts, TikToks,
+  or videos are not getting views, mentions 200-view jail, a flop, low reach,
+  the algorithm, shadowbans, posting times, hashtags, niching down, picking a
+  niche or target audience, content pillars, a content calendar or strategy,
+  or asks which video idea to make next, even if they never say the word
+  algorithm. Also use it to review a list of past or planned videos for topic
+  consistency.
 ---
 
 # Algorithm Strategist

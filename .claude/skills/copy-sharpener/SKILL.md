@@ -1,6 +1,18 @@
 ---
 name: copy-sharpener
-description: Research what your audience actually wants in their own words, then write and sharpen any copy so it is clear, tight, concrete, in their register, and rhythmic, using Jay Yang's 6Ps of copy thinking and 5Cs of writing, the virality hook score, and the who-what-when-how call to action. Use this whenever the user has written or needs words that must persuade: a caption, an ad, a landing page, an email, a bio, a sales page, a pitch, an on-screen text overlay, a DM, or the wording of any script; whenever they say their copy is weak, wordy, corporate, flat, confusing, or not converting; whenever they ask for a call to action, a headline, a tagline, a value proposition, or help describing what they sell; and whenever they want to mine customer language, comments, or DMs for the exact phrases to write back. Also use it to line-edit and score a draft before it ships.
+description: |
+  Research what your audience actually wants in their own words, then write
+  and sharpen any copy so it is clear, tight, concrete, in their register, and
+  rhythmic, using Jay Yang's 6Ps of copy thinking and 5Cs of writing, the
+  virality hook score, and the who-what-when-how call to action. Use this
+  whenever the user has written or needs words that must persuade: a caption,
+  an ad, a landing page, an email, a bio, a sales page, a pitch, an on-screen
+  text overlay, a DM, or the wording of any script; whenever they say their
+  copy is weak, wordy, corporate, flat, confusing, or not converting; whenever
+  they ask for a call to action, a headline, a tagline, a value proposition,
+  or help describing what they sell; and whenever they want to mine customer
+  language, comments, or DMs for the exact phrases to write back. Also use it
+  to line-edit and score a draft before it ships.
 ---
 
 # Copy Sharpener
@@ -40,6 +52,13 @@ brand story are what the 6Ps positioning and promise should be consistent
 with, so when the user has both, the brand definition wins over anything
 invented here. When they have neither and the copy keeps coming out generic,
 the problem is usually identity rather than wording, and it belongs there.
+
+`humanizer` runs after this skill, as the last pass over finished English
+prose. This skill decides what the words say and how they land; humanizer
+strips the residue that says a model wrote them (staged contrasts, one-line
+closers, forced triads, stock AI words, decorative bold). The two agree on
+concrete over abstract, so the order is: sharpen here, then humanize. It is
+English-only, so do not run it over Arabic voiceover lines.
 
 ## Prerequisites
 

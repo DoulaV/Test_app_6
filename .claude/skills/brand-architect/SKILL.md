@@ -1,6 +1,22 @@
 ---
 name: brand-architect
-description: Define, audit and defend a personal or creator brand using Caleb Ralston's model: branding is an intentional pairing of relevant things done consistently, and brand is the association the audience ends up holding. Covers the Brand Journey Framework worked backwards from the desired outcome, the associations you want and the ones you refuse, positioning into a gap in the industry, the Brand Story Framework (catalyst, core truth, proof), choosing a narrow core topic, the 80/20 interest-stacking split, and when and how to expand without losing the core. Use this whenever the user asks who they should be online, what they should be known for, how to stand out, how to build a personal brand, what their positioning, niche identity, content pillars, bio, tagline or About page should say, whether to accept a collaboration, podcast appearance, sponsorship or guest spot, why their audience does not remember or trust them, why followers do not convert, whether to broaden or narrow what they post about, or how to tell their own story, even if they never say the word brand. Also use it to audit the accidental brand an existing account already has.
+description: |
+  Define, audit and defend a personal or creator brand using Caleb Ralston's
+  model: branding is an intentional pairing of relevant things done
+  consistently, and brand is the association the audience ends up holding.
+  Covers the Brand Journey Framework worked backwards from the desired
+  outcome, the associations you want and the ones you refuse, positioning into
+  a gap in the industry, the Brand Story Framework (catalyst, core truth,
+  proof), choosing a narrow core topic, the 80/20 interest-stacking split, and
+  when and how to expand without losing the core. Use this whenever the user
+  asks who they should be online, what they should be known for, how to stand
+  out, how to build a personal brand, what their positioning, niche identity,
+  content pillars, bio, tagline or About page should say, whether to accept a
+  collaboration, podcast appearance, sponsorship or guest spot, why their
+  audience does not remember or trust them, why followers do not convert,
+  whether to broaden or narrow what they post about, or how to tell their own
+  story, even if they never say the word brand. Also use it to audit the
+  accidental brand an existing account already has.
 ---
 
 # Brand Architect

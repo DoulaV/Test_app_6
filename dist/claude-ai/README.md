@@ -1,10 +1,14 @@
 # Uploading these skills to normal Claude chat
 
-These are the same six skills from `.claude/skills/`, repackaged for
-claude.ai. The only difference is the YAML `description` field, which
-claude.ai caps at 200 characters. The full trigger text now lives in a
-"When to use this" section at the top of each SKILL.md instead, so nothing
-is lost, and Claude still reads it.
+These are the skills from `.claude/skills/`, repackaged for claude.ai. The only difference is the YAML `description`
+field, which claude.ai caps at 200 characters. The full trigger text now
+lives in a "When to use this" section at the top of each SKILL.md instead, so
+nothing is lost, and Claude still reads it. Every other frontmatter key is
+carried through, so a vendored skill keeps its license and version.
+
+Descriptions are written as YAML block scalars. A plain `description:` whose
+text contains a colon followed by a space is not valid YAML, and a strict
+parser rejects it. The packer validates each one before zipping.
 
 Regenerate these zips after any change to the skills:
 
@@ -36,3 +40,4 @@ and a Gemini key.
 4. hook-writer
 5. story-loop-writer
 6. copy-sharpener
+7. humanizer (English prose only, runs last)

@@ -8,7 +8,7 @@ SHORT = {
  "hook-writer": "Write, rewrite and grade scroll-stopping hooks using the three-step formula: context lean, scroll stop, contrarian snapback, plus on-screen text and speed to value. Use for intros and openings.",
  "story-loop-writer": "Structure and audit story and script bodies with the four-step addiction loop: stakes, big question, head fake, re-hook. Use when content is flat, loses people mid-way, or needs retention.",
  "copy-sharpener": "Research your audience's own words, then make any copy clear, concise, concrete, conversational and rhythmic. Use for captions, bios, ads, emails, landing pages, headlines and calls to action.",
- "humanizer": "Rewrite AI-sounding text so it reads like the writer, without changing what it says. Use when editing prose for AI tells: staged contrasts, one-line closers, dashes, triads, stock AI words.",
+ "humanizer": "Rewrite AI-sounding text so it reads like the writer, without changing what it says. English and Egyptian Arabic, separate pattern sets. Removes AI tells; restores Masri grammar and particles.",
  "youtube-to-agent": "Turn any YouTube tutorial or shared video into a working skill: ingest, beat sheet, spec, scaffold, fill the gaps, test. Use when someone shares a video and wants Claude to learn from it.",
 }
 

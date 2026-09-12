@@ -1,36 +1,57 @@
-# Upstream
+# Upstream and provenance
 
-This skill is vendored from https://github.com/blader/humanizer (MIT,
-Copyright (c) 2025 Siqi Chen), version 3.0.0, at commit 9862685f575c65a8247f90369951df1b3416e3d6.
+`SKILL.md` is our merge of two skills. Both are MIT and both are vendored
+unmodified in `references/`, with their licence files kept beside them.
 
-`SKILL.md` and `LICENSE` are byte-identical to upstream and should stay that
-way. Do not edit them. To update, re-copy both files from the repo and bump
-the commit above. Anything we want to add about how it fits the rest of this
-repo goes in this file instead.
+| Source | Version | Commit | Vendored as | Licence |
+|---|---|---|---|---|
+| [blader/humanizer](https://github.com/blader/humanizer) | 3.0.0 | 9862685 | `references/english-patterns.md` | `LICENSE-blader-humanizer` (MIT, Copyright (c) 2025 Siqi Chen) |
+| [OthmanAdi/humanizer-semitic](https://github.com/OthmanAdi/humanizer-semitic), skill `humanizer-ar-egt` | 1.0.0 | 2c9d4fb | `references/egyptian-arabic-patterns.md` | `LICENSE-othmanadi-humanizer-semitic` (MIT, Copyright (c) 2026 OthmanAdi) |
+
+The two reference files are byte-identical to upstream. Do not edit them. To
+update, re-copy the file from the source repo and bump the commit above, then
+re-read `references/merge.md` and check whether any conflict resolution moved.
+
+blader/humanizer draws its patterns from Wikipedia's
+["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing),
+maintained by WikiProject AI Cleanup. humanizer-semitic credits
+blader/humanizer as its structural model and adds research-grounded patterns
+for Arabic and Hebrew.
+
+## What is ours
+
+`SKILL.md` and `references/merge.md`. Specifically:
+
+- The language router, and the rule that the two lists are never run together.
+- The cut / swap / add distinction, and the closed list of what may be added.
+- The resolution that the no-invention rule beats the Egyptian source's
+  instruction to reach for specific place names and foods when vocabulary is
+  flat. See conflict 2 in `merge.md`. This one matters: without it the skill
+  will fabricate detail in a personal script.
+- The hedging resolution, where the two sources appear to contradict each
+  other and do not.
+- Promoting the writing-sample override from the English source to both
+  languages.
+- The **Dramatic** register rung, for written dialogue and voiceover, which
+  neither source has and which is the main thing this repo is used to write.
+- The mixed-script rule in §D.
+
+## Not vendored
+
+humanizer-semitic also ships MSA (`humanizer-ar-msa`), Levantine
+(`humanizer-ar-shami`) and Modern Hebrew (`humanizer-he`) skills. They are out
+of scope here. If this repo ever needs MSA, add it the same way: vendor the
+file into `references/`, keep it unmodified, and extend the router in Step 0
+rather than blending its patterns into the Egyptian ones.
 
 ## Where it sits among our skills
 
-It runs **after** `copy-sharpener`, as the last pass over finished English
-prose. copy-sharpener decides what the words should say and how they should
-land. humanizer removes the residue that says a model wrote them.
+Last. It runs after `copy-sharpener`, which decides what the words say and how
+they land. This one removes the residue that says a model wrote them.
 
-Two overlaps worth knowing:
-
-- Both care about concrete over abstract. copy-sharpener gets there through
-  the So What ladder and the deaf-and-mute test. humanizer gets there by
-  deleting the staging (§1 to §5). They agree, so run copy-sharpener first
-  and let humanizer clean up after.
-- humanizer §8 bans em dashes from the final rewrite unless a writing sample
-  uses them. That matches the standing preference in this repo, so it doubles
-  as an enforcement pass.
-
-## What it does not do
-
-It is written for English. The pattern list (stock words, hyphenated pairs,
-curly quotes, sales language) does not transfer to Egyptian Arabic, and §1
-explicitly says the not-X-but-Y formula exists in every language but gives no
-guidance beyond that. Use it on English captions, bios, pitches and English
-notes. Do not run it on Arabic voiceover lines and expect the list to apply.
-
-The skill also takes a writing sample and matches it, which is the highest
-value way to use it. Give it three or four paragraphs you actually wrote.
+Unlike the English-only version this repo carried before, it now covers the
+Egyptian Arabic scripts too, which was the gap. The thing to watch is the
+register: on a cinematic script, use the Dramatic rung, where the grammar
+patterns apply in full and the performative additions do not. Running the
+Ultra-Casual rung over film dialogue will fill it with هههههه and reader
+questions that do not belong in a character's mouth.

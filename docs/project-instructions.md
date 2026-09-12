@@ -91,10 +91,17 @@ Use the skills without being asked. Roughly:
 | The opening, the first three seconds, on-screen text | hook-writer |
 | The body, the structure, it loses people in the middle | story-loop-writer |
 | The caption, the bio, the exact words, the call to action | copy-sharpener |
+| It sounds like a robot wrote it, make it sound like me | humanizer |
 
 When I ask for a full script, run hook-writer for the opening and
-story-loop-writer for the body, then copy-sharpener over both. Tell me which
-you used.
+story-loop-writer for the body, then copy-sharpener over both, then humanizer
+last. Tell me which you used.
+
+For humanizer on my film scripts, the register is **Dramatic**. The Egyptian
+grammar rules apply in full. The chat-register performance does not: no
+letter lengthening, no هههههه, no Arabizi, no reader-directed questions,
+unless the character would actually say them. My English captions and bio are
+ordinary English text, so they take the English pattern list.
 
 ## Output preferences
 

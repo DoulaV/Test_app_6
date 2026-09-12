@@ -14,6 +14,7 @@ in a fixed order:
 | 3 | `hook-writer` | The first three lines and the on-screen text | How to Create Irresistible Hooks |
 | 4 | `story-loop-writer` | The body: stakes, big question, head fake, re-hook | The Neuroscience of Addictive Storytelling |
 | 5 | `copy-sharpener` | The actual words, the on-screen text, and the close | How To Write Words That Make People Buy |
+| 6 | `humanizer` | Whether it still sounds like a machine wrote it | blader/humanizer + OthmanAdi/humanizer-semitic |
 
 You do not need to name the skills. Claude Code triggers them from the
 request. Naming them is fine when you want to force the order.
@@ -174,6 +175,25 @@ with dialect reads as a translation, so it holds one register throughout.
 For emotional pieces it will not bolt a sales close onto the ending. It
 softens to a single question, which is also what fixes a low comment count.
 
+### Step 3c: Strip the AI residue (humanizer)
+
+> Using humanizer. Register: Dramatic. This is voiceover for a cinematic short
+> film in Egyptian Arabic. [paste the script]
+
+The Egyptian pattern list catches what a general-purpose skill cannot: MSA
+vocabulary that crept in (الآن instead of دلوقتي, جداً instead of أوي), tanwin,
+سوف futures where Masri wants هـ, a bare imperfect missing its بـ prefix,
+هذا before the noun instead of ده after it, MSA negation instead of ما...ش,
+and a paragraph with no يعني or بقى anywhere in it. One جداً is enough to mark
+a text as machine-written.
+
+Say **Dramatic** every time for film work. Without it the skill assumes you
+are writing a post and starts adding هههههه, letter lengthening and reader
+questions, which belong in a chat and not in a character's mouth.
+
+For English captions and your bio, drop the register line and it uses the
+English list instead.
+
 ### Step 4: Assemble and check
 
 Paste hook plus body into one script and ask:
@@ -237,6 +257,7 @@ scroll at night feeling guilty".
 | Script sounds translated | Voice note missing or too thin | Add specific phrase swaps and a persona to the voice note |
 | Lots of views, no comments | Hedged take | Ask algorithm-strategist for an honest, amplified stance |
 | Claude keeps inserting bracketed placeholders | You did not give the facts or the first value hit | Supply them up front in the request |
+| The Arabic reads stiff, like a news bulletin | MSA crept into the dialect | humanizer, Egyptian list: check جداً, tanwin, سوف, missing بـ, هذا before the noun |
 
 ## Part 5: Extending the system
 

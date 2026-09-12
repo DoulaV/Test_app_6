@@ -53,12 +53,14 @@ with, so when the user has both, the brand definition wins over anything
 invented here. When they have neither and the copy keeps coming out generic,
 the problem is usually identity rather than wording, and it belongs there.
 
-`humanizer` runs after this skill, as the last pass over finished English
-prose. This skill decides what the words say and how they land; humanizer
-strips the residue that says a model wrote them (staged contrasts, one-line
-closers, forced triads, stock AI words, decorative bold). The two agree on
-concrete over abstract, so the order is: sharpen here, then humanize. It is
-English-only, so do not run it over Arabic voiceover lines.
+`humanizer` runs after this skill, as the last pass over finished prose. This
+skill decides what the words say and how they land; humanizer strips the
+residue that says a model wrote them. It handles English and Egyptian Arabic
+with separate pattern sets, because the failure modes are opposite: English AI
+prose is padded with staging to cut, Egyptian AI prose is Modern Standard
+Arabic in costume and needs its grammar and particles restored. On a cinematic
+script tell it the register is Dramatic, or it will add chat-register
+performance that does not belong in a character's mouth.
 
 ## Prerequisites
 

@@ -78,6 +78,19 @@ Two places it reaches back:
 
 Open with the single biggest problem in one sentence, then the blocks that apply.
 
+**Brief mode.** When there is no draft, say so and skip the line edit, or
+keep it and relabel it as the lines this brief would default into. Then open
+with the biggest problem in the brief's framing rather than in the copy.
+
+**Slotted formats.** A landing page hero, an email, and an ad each have
+several slots. Name the inventory before writing (for a hero: eyebrow, H1,
+subhead, proof line, button, under-button microcopy), and say which of the
+6Ps each slot carries. The three-to-five word budget is for on-screen video
+text only; an H1 can run to a dozen words if the cadence earns it.
+
+**Alternates.** One call to action, always. Headlines are different: give one
+recommendation plus two or three alternates, and say what each one trades.
+
 **Line edit.** For a draft, a table, worst line first:
 
 ```
@@ -128,6 +141,11 @@ do not:
   are talking to. Pick one and hold it. Mixing reads as a translation, which
   is the same failure as corporate English.
 
+Arabic adds one thing English does not have: grammatical gender on every
+second-person address. Deciding between masculine, feminine, or a rephrase
+that avoids both is an audience decision, not a style one. Ask who the
+majority reader is, or write around it and say that you did.
+
 For on-screen text in any language, the concise rule tightens: three to five
 words is the working budget, and the reader gets one pass at reading speed,
 not yours.
@@ -165,7 +183,12 @@ recognition, not an offer, and the close must change accordingly.
 
 **Quoting the audience's own words back** is research when the words are
 real and paraphrased faithfully, and it is fabrication when you invent a
-quote and present it as a customer's. Harvest real language. Never attribute
+quote and present it as a customer's. When there is no audience language available at all, say so plainly, mark
+the draft's register as inferred, and give the user the twenty-minute
+instruction for collecting it rather than writing in a voice you invented and
+presenting it as theirs. A named weakness beats a fabricated strength.
+
+Harvest real language. Never attribute
 an invented sentence to a real person, never publish a customer's words
 without permission, and never sharpen a quote into something they did not
 say.

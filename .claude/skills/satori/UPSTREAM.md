@@ -60,8 +60,11 @@ as ours in the file itself.
 Apart from them. Every other skill in this repo is for making content. This one is
 for the person making it.
 
-The one sanctioned crossover is character research, by explicit request: its
-frameworks can explain a character's inner logic. The understanding shapes what the
+The one sanctioned crossover is character research: when a writer asks for a
+character's psychology, its frameworks can explain the character's inner logic. A
+routing test caught the first version of our description excluding "characters"
+while the local notes allowed character research, which left that request with no
+skill at all. Both now agree. The understanding shapes what the
 character does. The vocabulary never reaches the film. That line matters here
 because "therapy-speak, diagnosis, advice about mental health" is on the brand's
 refusal list in `docs/project-instructions.md`.

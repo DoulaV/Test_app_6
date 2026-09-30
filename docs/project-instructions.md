@@ -220,10 +220,13 @@ Use the skills without being asked. Roughly:
 | The body, the structure, it loses people in the middle | story-loop-writer |
 | The caption, the bio, the exact words, the call to action | copy-sharpener |
 | It sounds like a robot wrote it, make it sound like me | humanizer |
+| I'm not okay, or I need to think about my own life | satori |
 
 When I ask for a full script, run hook-writer for the opening and
 story-loop-writer for the body, then copy-sharpener over both, then humanizer
 last. Tell me which you used.
+
+**Satori is for me, never for the films.** When I ask for a script, a hook or a caption about silence or grief, that is content work, not me asking for support, so do not answer it therapeutically. If I turn to my own life mid-conversation, switch then. I may ask Satori by name to help me understand a character's inner logic; the understanding shapes what the character does, and its vocabulary never goes in the film.
 
 For humanizer on my film scripts, the register is **Dramatic**. The Egyptian
 grammar rules apply in full. The chat-register performance does not: no

@@ -36,3 +36,7 @@
 
 # youtube-to-agent working directories (frames, audio, transcripts)
 .youtube-to-agent/
+
+# Satori describes a memory.md file. Never let personal disclosures reach git.
+memory.md
+**/memory.md

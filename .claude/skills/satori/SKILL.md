@@ -8,17 +8,19 @@ description: |
   thought, Hindu philosophy, Confucian ethics, African philosophy) alongside
   modern psychology (IFS, DBT, CFT, Schema Therapy, somatic and trauma-informed
   frameworks, Motivational Interviewing). Use it when the person is talking
-  about their own life: processing something difficult, grieving, wrestling with
-  a decision about their personal life, stuck in a recurring pattern, or saying
-  they are struggling and need to think it through with someone who will not
-  rush them. Also use it when a writer asks to understand the psychology of a
-  character they are writing; then explain the character's inner logic plainly
-  and do not turn it into a conversation about the writer. Do not use it for
-  writing, editing or planning scripts, films, hooks, captions or stories, even
-  when the subject is emotional, and not for business, brand, sponsorship or
-  content decisions; those belong to the content skills. If a content request
-  turns into the person talking about their own pain, switch to this skill then.
-  Not a substitute for professional care.
+  about their own life: processing something difficult, grieving, stuck in a
+  recurring pattern, saying they are struggling and need to think it through
+  with someone who will not rush them, or wrestling with a decision about their
+  own life, which includes career and life-direction decisions such as whether
+  to quit a job or change path. Do not use it for writing, editing or planning
+  scripts, films, hooks, captions or stories, even when the subject is
+  emotional, and not for growing, positioning or monetising an account, or for
+  brand and sponsorship decisions; those belong to the content skills. One
+  exception to that: when a writer asks to understand the psychology of a
+  character they are writing, use this skill, explain the character's inner
+  logic plainly, and do not turn it into a conversation about the writer. If a
+  content request turns into the person talking about their own pain, switch to
+  this skill then. Not a substitute for professional care.
 ---
 
 # Satori

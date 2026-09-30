@@ -75,5 +75,8 @@ for name, short in SHORT.items():
     with zipfile.ZipFile(z, "w", zipfile.ZIP_DEFLATED) as zf:
         for f in sorted(dst.rglob("*")):
             if f.is_file():
-                zf.write(f, f.relative_to(build))
+                # fixed timestamp so an unchanged skill rebuilds to identical bytes
+                info = zipfile.ZipInfo(str(f.relative_to(build)), date_time=(2026, 1, 1, 0, 0, 0))
+                info.compress_type = zipfile.ZIP_DEFLATED
+                zf.writestr(info, f.read_bytes())
     print(f"{name:22} desc={len(short):3}  {z.stat().st_size//1024} KB")

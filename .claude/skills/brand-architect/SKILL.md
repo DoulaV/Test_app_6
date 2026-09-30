@@ -13,10 +13,12 @@ description: |
   out, how to build a personal brand, what their positioning, niche identity,
   content pillars, bio, tagline or About page should say, whether to accept a
   collaboration, podcast appearance, sponsorship or guest spot, why their
-  audience does not remember or trust them, why followers do not convert,
-  whether to broaden or narrow what they post about, or how to tell their own
-  story, even if they never say the word brand. Also use it to audit the
-  accidental brand an existing account already has.
+  audience does not remember or trust them, why followers do not convert, what
+  to sell first or how to make money from an audience (presets, LUTs, sound
+  packs, courses, digital products), whether the people who watch are the
+  people who would buy, whether to broaden or narrow what they post about, or
+  how to tell their own story, even if they never say the word brand. Also use
+  it to audit the accidental brand an existing account already has.
 ---
 
 # Brand Architect

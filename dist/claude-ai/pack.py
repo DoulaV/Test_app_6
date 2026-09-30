@@ -2,7 +2,7 @@ import re, shutil, yaml, zipfile
 from pathlib import Path
 
 SHORT = {
- "brand-architect": "Define and audit a personal brand: the associations you keep and the ones you refuse, positioning, brand story, core topic, and the 80/20 off-band budget. Use for positioning and collab calls.",
+ "brand-architect": "Define and audit a personal brand: associations kept and refused, positioning, brand story, core topic, off-band budget, and what to sell first. Use for positioning, collabs and monetising.",
  "algorithm-strategist": "Plan and audit content strategy with the sampling model: one avatar, a narrow topic band, the four engagement attributes, flop diagnosis, comment stances. Use for low reach and what to post next.",
  "brand-idea-miner": "Mine validated video ideas from outliers in your niche and shape them with the five obsession elements. Use for reel ideas, competitor research, remixes, or auditing an idea before you make it.",
  "hook-writer": "Write, rewrite and grade scroll-stopping hooks using the three-step formula: context lean, scroll stop, contrarian snapback, plus on-screen text and speed to value. Use for intros and openings.",

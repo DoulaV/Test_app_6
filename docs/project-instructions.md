@@ -221,6 +221,7 @@ Use the skills without being asked. Roughly:
 | The caption, the bio, the exact words, the call to action | copy-sharpener |
 | It sounds like a robot wrote it, make it sound like me | humanizer |
 | I'm not okay, or I need to think about my own life | satori |
+| Turn this scene into shots I can render in Higgsfield | higgsfield |
 
 When I ask for a full script, run hook-writer for the opening and
 story-loop-writer for the body, then copy-sharpener over both, then humanizer

@@ -8,6 +8,7 @@ SHORT = {
  "hook-writer": "Write, rewrite and grade scroll-stopping hooks using the three-step formula: context lean, scroll stop, contrarian snapback, plus on-screen text and speed to value. Use for intros and openings.",
  "story-loop-writer": "Structure and audit story and script bodies with the four-step addiction loop: stakes, big question, head fake, re-hook. Use when content is flat, loses people mid-way, or needs retention.",
  "copy-sharpener": "Research your audience's own words, then make any copy clear, concise, concrete, conversational and rhythmic. Use for captions, bios, ads, emails, landing pages, headlines and calls to action.",
+ "higgsfield": "Write production-ready Higgsfield AI video and image prompts: model choice (Kling, Veo, Seedance, Soul), camera and motion presets, Soul ID consistency, Cinema Studio, troubleshooting.",
  "humanizer": "Rewrite AI-sounding text so it reads like the writer, without changing what it says. English and Egyptian Arabic, separate pattern sets. Removes AI tells; restores Masri grammar and particles.",
  "satori": "Wisdom companion for your own inner life: grief, meaning, hard personal questions. Also explains a character's psychology on request. Not for writing content or brand decisions.",
  "youtube-to-agent": "Turn any YouTube tutorial or shared video into a working skill: ingest, beat sheet, spec, scaffold, fill the gaps, test. Use when someone shares a video and wants Claude to learn from it.",

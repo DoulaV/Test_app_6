@@ -40,3 +40,8 @@
 # Satori describes a memory.md file. Never let personal disclosures reach git.
 memory.md
 **/memory.md
+
+# Higgsfield skill: per-project generation logs and telemetry written at runtime
+.claude/skills/higgsfield/db/routing-log.json
+.claude/skills/higgsfield/db/projects/
+**/__pycache__/

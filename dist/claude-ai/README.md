@@ -6,6 +6,8 @@ lives in a "When to use this" section at the top of each SKILL.md instead, so
 nothing is lost, and Claude still reads it. Every other frontmatter key is
 carried through, so a vendored skill keeps its license and version.
 
+claude.ai also requires exactly one `SKILL.md` per zip. A package with sub-skills in their own folders (higgsfield has 35) gets its nested files renamed to `SUBSKILL.md` and every reference to them rewritten, and the packer refuses to write any zip that still has more than one.
+
 Descriptions are written as YAML block scalars. A plain `description:` whose
 text contains a colon followed by a space is not valid YAML, and a strict
 parser rejects it. The packer validates each one before zipping.

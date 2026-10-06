@@ -67,6 +67,16 @@ for the shot prompts, then the Higgsfield connector to render them.
 - The specs are a snapshot. The skill itself says to verify live when the
   snapshot is older than 30 days.
 
+## The claude.ai package differs in one way
+
+claude.ai rejects a zip with more than one `SKILL.md`, and this package has one
+per sub-skill folder (36 in total). `dist/claude-ai/pack.py` renames the 35
+nested ones to `SUBSKILL.md` in the zip only, rewrites every path that points at
+them (481 references, all checked to resolve), and adds a one-paragraph note at
+the top of the zipped dispatcher explaining the rename. The copy in this folder
+is untouched, because Claude Code reads nested `SKILL.md` files without
+complaint.
+
 ## Updating
 
 Run the copy again against a fresh clone of upstream, using the same include

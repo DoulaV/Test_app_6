@@ -52,11 +52,37 @@ def split_frontmatter(text):
     return pairs, nested, body
 
 
+
+TEXT_SUFFIXES = {".md", ".py", ".json", ".yaml", ".yml", ".txt", ".html"}
+NESTED_NAME = "SUBSKILL.md"
+
+
+def flatten_nested_skills(dst):
+    """claude.ai accepts exactly one SKILL.md per zip. A multi-skill package keeps
+    one SKILL.md per sub-skill folder, so rename the nested ones and rewrite every
+    path that points at them. Returns the number of files renamed."""
+    nested = [f for f in dst.rglob("*")
+              if f.is_file() and f.name.lower() == "skill.md" and f.parent != dst]
+    if not nested:
+        return 0
+    dirs = sorted({f.parent.name for f in nested}, key=len, reverse=True)
+    pattern = re.compile(r"(?<![A-Za-z0-9_-])(" + "|".join(map(re.escape, dirs)) + r")/SKILL\.md")
+    for f in nested:
+        f.rename(f.with_name(NESTED_NAME))
+    for f in dst.rglob("*"):
+        if f.is_file() and f.suffix in TEXT_SUFFIXES:
+            t = f.read_text(encoding="utf-8")
+            new = pattern.sub(lambda m: f"{m.group(1)}/{NESTED_NAME}", t)
+            if new != t:
+                f.write_text(new, encoding="utf-8")
+    return len(nested)
+
 for name, short in SHORT.items():
     assert len(short) <= 200, (name, len(short))
     src = src_root / name
     dst = build / name
     shutil.copytree(src, dst)
+    renamed = flatten_nested_skills(dst)
     p = dst / "SKILL.md"
     pairs, nested, body = split_frontmatter(p.read_text())
     d = dict(pairs)
@@ -68,9 +94,17 @@ for name, short in SHORT.items():
     fm = "\n".join([f"name: {name}", "description: |", f"  {short}", *extra])
     h1 = re.match(r"\n*(# .*\n)", body)
     body = body[:h1.end()] + f"\n## When to use this\n\n{long_desc}\n" + body[h1.end():]
+    if renamed:
+        note = (f"\n> **Packaging note.** claude.ai allows one `SKILL.md` per upload, so in this "
+                f"package each sub-skill's main file is named `{NESTED_NAME}`. Upstream calls it "
+                f"`SKILL.md`. Wherever a file here refers to a sub-skill's `SKILL.md`, open that "
+                f"sub-skill's `{NESTED_NAME}`. Plain `SKILL.md` on its own means this file.\n")
+        body = body[:h1.end()] + note + body[h1.end():]
     p.write_text(f"---\n{fm}\n---\n{body}")
     check = yaml.safe_load(fm)          # must be valid YAML for the uploader
     assert check["name"] == name and len(check["description"]) <= 200
+    skill_mds = [f for f in dst.rglob("*") if f.is_file() and f.name.lower() == "skill.md"]
+    assert skill_mds == [dst / "SKILL.md"], f"{name}: claude.ai needs exactly one SKILL.md, found {len(skill_mds)}"
     z = out / f"{name}.zip"
     if z.exists(): z.unlink()
     with zipfile.ZipFile(z, "w", zipfile.ZIP_DEFLATED) as zf:
@@ -80,4 +114,5 @@ for name, short in SHORT.items():
                 info = zipfile.ZipInfo(str(f.relative_to(build)), date_time=(2026, 1, 1, 0, 0, 0))
                 info.compress_type = zipfile.ZIP_DEFLATED
                 zf.writestr(info, f.read_bytes())
-    print(f"{name:22} desc={len(short):3}  {z.stat().st_size//1024} KB")
+    extra_note = f"  ({renamed} sub-skills renamed to {NESTED_NAME})" if renamed else ""
+    print(f"{name:22} desc={len(short):3}  {z.stat().st_size//1024} KB{extra_note}")

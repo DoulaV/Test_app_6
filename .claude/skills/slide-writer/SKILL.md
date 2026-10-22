@@ -44,14 +44,26 @@ write the file by itself.
 
 ## Before you start
 
-You need three things, and should ask once for whichever is missing:
+You need three things:
 
 1. **The occasion and audience.** Who reads it, and what decision or reaction it
    should produce.
 2. **How it will be consumed.** Presented live with you in the room, or sent,
    printed and forwarded without you. This decides the density of every page.
 3. **The facts.** Data, notes, a briefing. Do not invent numbers to make a title
-   quantified; ask for them, or mark the slot `[number needed]`.
+   quantified; mark the slot `[number needed]` and list it as an open question.
+
+**Proceed, do not stall.** When the audience, the delivery mode or some facts are
+missing, go ahead: state your assumption in one line at the top, put
+`[number needed]` wherever a figure belongs, and end with the open questions whose
+answers would change the work. Ask before starting only when the goal itself is
+unknown, meaning you cannot say what decision or reaction the deck should produce.
+A wrong guess about the audience costs one revision; a round of questions before
+any draft costs the same and shows nothing. *(Resolution chosen for this skill;
+the videos assume you know your audience.)*
+
+Check the user's own arithmetic. If their figures do not produce the percentage
+they quoted, say so and use the correct number in the title.
 
 ## Step 1: Match the document to the occasion
 
@@ -106,6 +118,14 @@ For the executive summary, the first page, or a document's introduction (V13):
 Scale it to the document: a paragraph for a short memo, a page or two for a long
 report (V13 t=02:30).
 
+**On a slide, the executive summary is still a table.** Use three rows labelled
+Situation, Complication, Solution (or one row per key message), with the label in
+a narrow left column and de-worded statements on the right, the key words in bold.
+Sentences are allowed here, kept short, because this page must read alone. It
+counts as one of the deck's pages: if the user asks for five slides, the executive
+summary is slide 1 of the five unless they say otherwise. *(Layout not from the
+videos; V13 gives the content, not the page.)*
+
 ## Step 3: Build each slide in five steps
 
 The same five steps appear independently in two videos (V15 t=13:15, V19 t=03:30):
@@ -124,7 +144,11 @@ An action title is a header that summarises the slide as a complete sentence
 - **Results, not process.** "When conducting analysis and interviews we learned a
   lot" says what you did, not what you found (V01 t=06:45).
 - **No general truths** ("managing risk is important") and **no absolutes** (all,
-  never, always): one counterexample from the room sinks the slide (V01 t=05:00).
+  never, always, every, none): one counterexample from the room sinks the slide
+  (V01 t=05:00). Restrictive words such as "only" are fine when they state a fact
+  or a condition you control ("pilot in two branches only, scale on approval"),
+  and not fine when they claim something about the world you cannot prove
+  ("the only option").
 - **Two lines at most**, telegraphic style allowed: drop articles and filler
   (V01 t=07:30, t=11:30).
 - **Keep title numbers live.** When the analysis changes, the title goes stale
@@ -187,6 +211,8 @@ needs to see, and title it accordingly (V09 t=04:15).
   with the same sub-headings, ideally named once as row labels (V10 t=07:30).
 - **Repeated sets keep their order and their icons** everywhere in the deck: the
   same regions, products or channels, always in the same sequence (V02 t=22:00).
+  This beats sorting by size. Sort a chart by value only when the set appears once,
+  or when ranking is the message; then say so in the title.
 - **Introduce terms before using them,** and say whether a number is good or bad
   (V05 t=07:45).
 
@@ -199,6 +225,11 @@ Look and feel is judged before content is read. Run the checklist in
   page. Nothing crosses them (V02 t=08:45).
 - **One body font size,** title and footnotes excepted. One deliberate exception
   per page at most, for a single headline number (V05 t=02:45, V02 t=10:45).
+  "Body" means everything else on the page: column headers, row labels, chart
+  labels and bar values, callouts and tables. Make headers stand out with bold or
+  colour, not a bigger size. The linter reports two body sizes as a NOTE, because
+  the second may be the allowed hero number, and three or more as an ERROR. Treat
+  a NOTE as an ERROR unless the second size is that one number.
 - **No jitter:** title, body and footer sit in exactly the same place on every
   page. Flip through the PDF and nothing should move (V05 t=03:45).
 - **Alignment:** as few alignment lines as possible, everything snapped to them,
@@ -257,12 +288,26 @@ from the videos; it automates their rules.)*
   (V04 t=07:30, V16 t=01:30).
 - **Legend or not:** always, unless the action title itself explains the highlight
   (V05 t=03:30, V23 t=07:30).
+- **Bridge versus integrated:** when the numbers build to a total (a bridge, a
+  P&L), the waterfall is the chart; if each bar also needs a comment, put the
+  comments in a row aligned under the bars, which is integrating the waterfall.
 - **Number circles:** only as a secondary dimension inside an integrated layout,
   never instead of a chart (V15 t=06:30, V06 t=11:00).
 - **Board in the room:** basic language, larger type, detail in the appendix.
   **Sent without you:** enough text to stand alone (V21 t=11:00, V17 t=06:30).
 - **Boardroom audience:** consulting style, not dense banking pages or
   football-field valuation charts (V05 t=12:15).
+- **One slide, several messages:** rewrite the slide around the one message the
+  title can carry, and show where each other message goes: its own page, or the
+  appendix (V15 t=00:30). If the user insists on a single page, keep the main
+  layout and fold the rest into one extra column such as "Implication for us",
+  then write the title as the combined conclusion. Never solve it with a bullet
+  block under the chart.
+- **The deck asks for a decision:** end the storyline with a decision page whose
+  title states the ask ("Approve AED [number needed] for a two-branch pilot from
+  Q3"), with the options, cost and payback, risks and next steps as rows or
+  columns. Put an investment or payback page before it when money is requested.
+  *(Not from the videos.)*
 
 ## Known gotchas
 

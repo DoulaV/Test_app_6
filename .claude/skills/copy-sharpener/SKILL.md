@@ -31,6 +31,7 @@ overlap is real, so the division is fixed:
 | Question | Skill |
 |---|---|
 | Who am I and what am I known for? | `brand-architect` |
+| Is this deck's storyline and page structure right? | `slide-writer` |
 | Who am I for and what should I make? | `algorithm-strategist` |
 | Which idea, validated how, with what proof? | `brand-idea-miner` |
 | What are the first three lines? | `hook-writer` |

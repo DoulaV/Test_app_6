@@ -139,6 +139,20 @@ do not treat a failed video download as a dead end. When you end up with no
 frames at all, say so in the analysis and mark every visual claim "Gemini
 only".
 
+**When the bot check blocks captions too.** `fetch_captions.py` retries
+automatically with YouTube's embedded-player client
+(`--extractor-args youtube:player_client=web_embedded`), which is usually
+still allowed to read captions from cloud machines, plus
+`--ignore-no-formats-error`, because that client gets no downloadable video
+formats and yt-dlp would otherwise abort before writing the subtitle file.
+`--flat-playlist` listing of a playlist also works from blocked machines.
+
+**Playlists and rate limits.** Fetching several videos at once trips YouTube's
+HTTP 429 "Too Many Requests" on the caption endpoint, and the limit applies
+to the machine's address, not the request. Fetch sequentially with a pause of
+20 to 30 seconds and a backoff retry; a 23-video playlist fetched four at a
+time lost seven videos to 429s, and a sequential retry recovered six of them.
+
 When yt-dlp is blocked outright (YouTube's bot check now refuses even
 caption and metadata requests from some cloud machines), run Path C twice:
 once in the default beats mode and once with `--mode transcript`, which asks

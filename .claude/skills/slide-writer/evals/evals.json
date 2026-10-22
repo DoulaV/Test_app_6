@@ -1,0 +1,29 @@
+{
+ "skill_name": "slide-writer",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "my manager wants 5 slides by tomorrow on why our customer complaints went up 30% this quarter and what we should do about it. complaints by channel: call centre 1,200 (last q 1,000), app 900 (500), branches 300 (310). top reasons: app login failures 40%, long call waits 35%, other 25%. we already have a fix for the app login planned for next month. can you build the storyline and tell me what goes on each slide?",
+   "expected_output": "Names the occasion (leadership update, likely read and forwarded) before writing. Opens with a situation-complication-solution executive summary. Gives a storyline table of about five slides whose action titles, read alone, make the argument, each a full sentence with numbers from the data (e.g. app complaints up 80% from 500 to 900; call centre +20%; branches flat; login failures 40% of reasons). Assigns a blueprint per slide (chart with implications, waterfall or bar). Does not invent numbers it was not given; marks gaps. Ends with open questions.",
+   "files": []
+  },
+  {
+   "id": 2,
+   "prompt": "review this slide and rewrite it: title 'Market Overview'. a 3D pie chart with 9 segments in different colours showing market share. under it 7 bullets in full sentences about competitors, our strengths, some risks and next steps. font sizes 24, 18, 16 and 12 on the same page.",
+   "expected_output": "Leads with a one-line verdict. Identifies: topic title not an action title; 3D pie with 9 slices (use a sorted bar); rainbow colours with no meaning; mixed font sizes (24/18/16/12, one body size); a clothesline of 7 full-sentence bullets mixing competitors, strengths, risks and next steps (split into columns by information type, de-word, move some to appendix). Rewrites with a sentence action title (with a placeholder where data is missing), describes the new layout column by column, and lists what moves to the appendix.",
+   "files": []
+  },
+  {
+   "id": 3,
+   "prompt": "write the executive summary page and the action titles for a board deck recommending we replace our current customer service model with a 24/7 chatbot plus a smaller specialist human team. cost today 14 million AED a year, expected 9 million after the change, rollout over 9 months.",
+   "expected_output": "Writes the executive summary as situation, complication (ending in the reader's question), solution with a preview of structure in ideas. Uses the given figures (14m AED to 9m AED, 5m AED saving, 9 months) and AED as ISO code. Gives action titles for the deck that read as the argument, including the service-quality risk and the plan. Board-appropriate: basic language, no jargon. Does not invent figures beyond what was given; flags what data is needed.",
+   "files": []
+  },
+  {
+   "id": 4,
+   "prompt": "same data as before: complaints by channel this quarter vs last: call centre 1,200 (1,000), app 900 (500), branches 300 (310). top reasons: app login failures 40%, long call waits 35%, other 25%. an app login fix ships next month. build me a 4-slide pptx I can send to my director.",
+   "expected_output": "Builds an actual 16:9 .pptx with python-pptx following the skill (action titles, table layouts, a chart stripped of gridlines, one body font size, zero text-box margins), runs scripts/lint_pptx.py, fixes every ERROR and WARN, and reports the final lint result plus what still needs a human read.",
+   "files": []
+  }
+ ]
+}

@@ -17,6 +17,12 @@ import argparse
 import json
 import re
 import sys
+import textwrap
+
+try:
+    import yaml  # optional: used only to validate the generated frontmatter
+except ImportError:
+    yaml = None
 from pathlib import Path
 
 TEMPLATE = Path(__file__).resolve().parent.parent / "assets" / "skill-template.md"
@@ -172,7 +178,10 @@ def main():
     template = TEMPLATE.read_text()
     fields = {
         "name": name,
-        "description": spec["description"].strip().replace("\n", " "),
+        # YAML block scalar: a plain description containing ": " is not valid YAML,
+        # and strict parsers (the claude.ai uploader among them) reject the skill.
+        "description": "|\n" + "\n".join(
+            "  " + line for line in textwrap.wrap(spec["description"].strip().replace("\n", " "), 78)),
         "title": spec.get("title") or title_from(name),
         "capability": spec["capability"].strip(),
         "source_title": source_title,
@@ -186,6 +195,10 @@ def main():
     body = template
     for k, v in fields.items():
         body = body.replace("{{" + k + "}}", v)
+    frontmatter = re.match(r"^---\n(.*?)\n---\n", body, re.S)
+    if frontmatter and yaml is not None:
+        parsed = yaml.safe_load(frontmatter.group(1))
+        assert parsed.get("name") == name and parsed.get("description"), "generated frontmatter did not parse"
     (skill_dir / "SKILL.md").write_text(body)
 
     analysis_text = ""

@@ -83,6 +83,17 @@ def download_vtt(url, out_dir, lang):
     proc = subprocess.run(cmd, capture_output=True, text=True)
     files = sorted(out_dir.glob("captions*.vtt"))
     if not files:
+        # Fallback for cloud machines that YouTube's bot check blocks. The
+        # embedded-player client is usually still allowed to read captions, but it
+        # gets no downloadable video formats, so the format check must be skipped
+        # or yt-dlp aborts before writing the subtitle file.
+        cmd = ["yt-dlp", "--no-warnings", "-q", "--skip-download", "--ignore-no-formats-error",
+               "--extractor-args", "youtube:player_client=web_embedded",
+               "--write-sub", "--write-auto-sub", "--sub-lang", f"{lang}-orig,{lang}",
+               "--sub-format", "vtt", "-o", str(base), url]
+        proc = subprocess.run(cmd, capture_output=True, text=True)
+        files = sorted(out_dir.glob("captions*.vtt"))
+    if not files:
         sys.exit(f"No captions found for {url}.\n{proc.stderr.strip()[:800]}")
     # Prefer manual subtitles over auto-generated (yt-dlp names auto ones like captions.en-orig.vtt or captions.en.vtt).
     files.sort(key=lambda p: ("orig" in p.name, len(p.name)))

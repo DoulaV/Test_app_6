@@ -50,6 +50,7 @@ FOOTER_TYPES = {"ftr", "sldNum", "dt"}
 SKIP_TITLE_WORDS = re.compile(r"^(agenda|contents?|table of contents|appendix|back-?up|"
                               r"thank you|thanks|questions|q&a|contact|next steps)\b", re.I)
 ABSOLUTE = re.compile(r"\b(all|always|never|every|none|nobody|everyone|everything)\b", re.I)
+FOOTNOTE_START = re.compile(r"^\s*(sources?|notes?|footnotes?|\*|\d\.?\s)", re.I)
 DOLLAR = re.compile(r"(?<![A-Z])\$\s?\d|\d\s?\$(?!\w)")
 THREE_D = ("bar3DChart", "line3DChart", "pie3DChart", "area3DChart",
            "surfaceChart", "surface3DChart")
@@ -164,6 +165,19 @@ def text_of(el):
     return " ".join(t.text or "" for t in el.iter(q("a:t"))).strip()
 
 
+def looks_like_cover(deck, part, shapes):
+    """Slide 1 is a cover only if it looks like one: a title-slide layout, a centred
+    title placeholder, or very little text. An executive summary on slide 1 is checked."""
+    layout = deck.rel_of_type(part, "slideLayout")
+    lroot = deck.xml(layout) if layout else None
+    if lroot is not None and lroot.get("type") == "title":
+        return True
+    if any(ph and ph[0] == "ctrTitle" for _, _, ph, _ in shapes):
+        return True
+    words = sum(len(text_of(el).split()) for el, _, _, _ in shapes)
+    return words < 25
+
+
 def lint(path):
     deck = Deck(path)
     W, H = deck.size()
@@ -196,9 +210,16 @@ def lint(path):
                 title_text, title_box = text_of(el), box
             if ph and ph[0] in FOOTER_TYPES and box and text_of(el):
                 footer_top = box[1] if footer_top is None else min(footer_top, box[1])
+        # Footnotes and sources drawn as plain text boxes, as most scripts build them
+        footer_shapes = set()
+        for el, tag, ph, box in shapes:
+            if (tag == "sp" and not ph and box and box[1] > 0.8 * H
+                    and FOOTNOTE_START.match(text_of(el))):
+                footer_shapes.add(id(el))
+                footer_top = box[1] if footer_top is None else min(footer_top, box[1])
 
         label = (title_text[:60] + "...") if len(title_text) > 60 else title_text
-        is_cover = n == 1
+        is_cover = n == 1 and looks_like_cover(deck, part, shapes)
         skip_title = is_cover or bool(SKIP_TITLE_WORDS.match(title_text))
 
         # Titles (V01)
@@ -241,7 +262,7 @@ def lint(path):
             if right is not None and x + cx > right + TOL:
                 add(n, "WARN", f"'{name}' ends {(x + cx - right) / EMU_PER_INCH:.2f} in right of the title's "
                                "right edge (V02 t=08:45).", label)
-            if footer_top is not None and y + cy > footer_top + TOL:
+            if footer_top is not None and id(el) not in footer_shapes and y + cy > footer_top + TOL:
                 add(n, "WARN", f"'{name}' runs into the footer area (V10 t=05:30).", label)
 
         # Text: font sizes, insets, bullets, currency (V02 t=08:00, V05 t=02:45, V20 t=06:30, V14 t=06:15)

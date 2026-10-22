@@ -63,7 +63,15 @@ any draft costs the same and shows nothing. *(Resolution chosen for this skill;
 the videos assume you know your audience.)*
 
 Check the user's own arithmetic. If their figures do not produce the percentage
-they quoted, say so and use the correct number in the title.
+they quoted, say so and use the correct number in the title. If two figures
+contradict each other (a reason accounting for more complaints than the channel it
+belongs to), do not quietly pick one: build with the figure the title needs, flag
+the conflict in that page's footnote, and list it first among the open questions.
+
+**Cover page:** a deck that is presented or sent formally gets a cover with the
+title, date and owner. An internal update of five pages or fewer can open straight
+on the executive summary. Either way the linter checks slide 1 unless it looks like
+a cover. *(Not from the videos.)*
 
 ## Step 1: Match the document to the occasion
 
@@ -263,14 +271,18 @@ python3 .claude/skills/slide-writer/scripts/lint_pptx.py deck.pptx
 It needs only the Python standard library, and checks:
 - 16:9 aspect ratio;
 - whether titles exist and read as sentences;
-- elements crossing the title's edges or running into the footer;
+- elements crossing the title's edges or running into the footer (footer
+  placeholders, or text boxes in the bottom fifth that start with "Source" or
+  "Note");
 - body font sizes;
 - text box margins and bullet indents;
 - currency notation;
 - SmartArt, 3D charts, large pies and animations;
 - title jitter between slides.
 
-It cannot judge the message, the chart choice or the storyline. *(The linter is not
+Slide 1 is skipped only when it looks like a cover. Text inside charts (axis
+labels, data labels) is not read, so check chart font sizes, units, period and
+source by eye. It cannot judge the message, the chart choice or the storyline. *(The linter is not
 from the videos; it automates their rules.)*
 
 ## Decision rules
